@@ -10,3 +10,15 @@ Z:\.NET Projects\EcoVerse.Shared\obj\Debug\net7.0\EcoVerse.Shared.dll
 Z:\.NET Projects\EcoVerse.Shared\obj\Debug\net7.0\refint\EcoVerse.Shared.dll
 Z:\.NET Projects\EcoVerse.Shared\obj\Debug\net7.0\EcoVerse.Shared.pdb
 Z:\.NET Projects\EcoVerse.Shared\obj\Debug\net7.0\ref\EcoVerse.Shared.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\bin\Debug\net7.0\EcoVerse.Shared.deps.json
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\bin\Debug\net7.0\EcoVerse.Shared.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\bin\Debug\net7.0\EcoVerse.Shared.pdb
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\net7.0\EcoVerse.Shared.csproj.AssemblyReference.cache
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\net7.0\EcoVerse.Shared.GeneratedMSBuildEditorConfig.editorconfig
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\net7.0\EcoVerse.Shared.AssemblyInfoInputs.cache
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\net7.0\EcoVerse.Shared.AssemblyInfo.cs
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\net7.0\EcoVerse.Shared.csproj.CoreCompileInputs.cache
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\net7.0\EcoVerse.Shared.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\net7.0\refint\EcoVerse.Shared.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\net7.0\EcoVerse.Shared.pdb
+Z:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\net7.0\ref\EcoVerse.Shared.dll

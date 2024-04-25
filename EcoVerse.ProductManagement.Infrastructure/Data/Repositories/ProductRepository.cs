@@ -1,6 +1,7 @@
 ﻿using EcoVerse.ProductManagement.Domain.Entities;
 using EcoVerse.ProductManagement.Domain.Interfaces;
 using EcoVerse.ProductManagement.Infrastructure.Data.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace EcoVerse.ProductManagement.Infrastructure.Data.Repositories;
 
@@ -19,23 +20,26 @@ public class ProductRepository : IProductRepository
         await _dbContext.SaveChangesAsync();
     }
 
-    public Task<List<Product>> ListAllAsync()
+    public async Task<List<Product>> ListAllAsync()
     {
-        return null;
+        return await _dbContext.Products.AsNoTracking().ToListAsync();
     }
 
-    public Task UpdateAsync(Guid id, Product product)
+    public async Task UpdateAsync(Product product)
     {
-        return null;
+        _dbContext.Products.Update(product);
+        await _dbContext.SaveChangesAsync();
     }
 
-    public Task DeleteAsync(Guid id)
+    public async Task DeleteAsync(Product product)
     {
-        return null;
+        _dbContext.Products.Remove(product);
+        await _dbContext.SaveChangesAsync();
     }
 
-    public Task<Product> GetByIdAsync(Guid id)
+    public async Task<Product?> GetByIdAsync(Guid id)
     {
-        return null;
+        var product = await _dbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+        return product;
     }
 }

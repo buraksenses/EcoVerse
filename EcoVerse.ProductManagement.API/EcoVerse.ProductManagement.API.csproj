@@ -15,8 +15,4 @@
       <ProjectReference Include="..\EcoVerse.ProductManagement.Application\EcoVerse.ProductManagement.Application.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Controllers\" />
-    </ItemGroup>
-
 </Project>

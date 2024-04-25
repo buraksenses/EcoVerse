@@ -1,4 +1,5 @@
 ﻿using EcoVerse.ProductManagement.Domain.Entities;
+using EcoVerse.Shared.DTOs;
 
 namespace EcoVerse.ProductManagement.Domain.Interfaces;
 
@@ -8,9 +9,9 @@ public interface IProductRepository
 
     Task<List<Product>> ListAllAsync();
 
-    Task UpdateAsync(Guid id, Product product);
+    Task UpdateAsync(Product product);
 
-    Task DeleteAsync(Guid id);
+    Task DeleteAsync(Product product);
 
-    Task<Product> GetByIdAsync(Guid id);
+    Task<Product?> GetByIdAsync(Guid id);
 }

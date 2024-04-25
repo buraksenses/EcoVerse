@@ -21,6 +21,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\EcoVerse.ProductManagement.Domain\EcoVerse.ProductManagement.Domain.csproj" />
+      <ProjectReference Include="..\EcoVerse.Shared\EcoVerse.Shared.csproj" />
     </ItemGroup>
 
 </Project>
