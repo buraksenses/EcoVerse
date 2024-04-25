@@ -18,6 +18,8 @@ public static class ApplicationServiceExtensions
 
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<IProductService, ProductService>();
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
+        services.AddScoped<ICategoryService, CategoryService>();
         
         return services;
     }

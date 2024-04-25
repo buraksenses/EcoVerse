@@ -1,5 +1,5 @@
-﻿using AutoMapper;
-using EcoVerse.ProductManagement.Application.DTOs;
+﻿using EcoVerse.ProductManagement.Application.DTOs;
+using EcoVerse.ProductManagement.Application.DTOs.Product;
 using EcoVerse.ProductManagement.Application.Interfaces;
 using EcoVerse.ProductManagement.Application.Mappings;
 using EcoVerse.ProductManagement.Domain.Entities;

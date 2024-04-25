@@ -1,4 +1,5 @@
 ﻿using EcoVerse.ProductManagement.Application.DTOs;
+using EcoVerse.ProductManagement.Application.DTOs.Product;
 using EcoVerse.Shared.DTOs;
 
 namespace EcoVerse.ProductManagement.Application.Interfaces;

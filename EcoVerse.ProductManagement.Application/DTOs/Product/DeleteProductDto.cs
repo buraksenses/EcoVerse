@@ -1,4 +1,4 @@
-﻿namespace EcoVerse.ProductManagement.Application.DTOs;
+﻿namespace EcoVerse.ProductManagement.Application.DTOs.Product;
 
 public record DeleteProductDto(
     string Name, 
