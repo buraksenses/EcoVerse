@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using EcoVerse.ProductManagement.Application.DTOs;
 using EcoVerse.ProductManagement.Application.Interfaces;
+using EcoVerse.ProductManagement.Application.Mappings;
 using EcoVerse.ProductManagement.Domain.Entities;
 using EcoVerse.ProductManagement.Domain.Interfaces;
 using EcoVerse.Shared.DTOs;
@@ -10,18 +11,16 @@ namespace EcoVerse.ProductManagement.Application.Services;
 public class ProductService : IProductService
 {
     private readonly IProductRepository _productRepository;
-    private readonly IMapper _mapper;
 
-    public ProductService(IProductRepository productRepository, IMapper mapper)
+    public ProductService(IProductRepository productRepository)
     {
         _productRepository = productRepository;
-        _mapper = mapper;
     }
 
 
     public async Task<Response<NoContent>> CreateAsync(CreateProductDto productDto)
     {
-        var product = _mapper.Map<Product>(productDto);
+        var product = ObjectMapper.Mapper.Map<Product>(productDto);
         
         if(product == null)
             return Response<NoContent>.Fail("Product can not be null!", 400);
@@ -35,7 +34,7 @@ public class ProductService : IProductService
     {
         var products = await _productRepository.ListAllAsync();
 
-        var productListDto = _mapper.Map<List<GetProductDto>>(products);
+        var productListDto = ObjectMapper.Mapper.Map<List<GetProductDto>>(products);
         
         return Response<List<GetProductDto>>.Success(productListDto,200);
     }
@@ -47,7 +46,7 @@ public class ProductService : IProductService
         if(existingProduct == null)
             return Response<NoContent>.Fail("Could not found product with given ID!",404);
 
-        var newProduct = _mapper.Map<Product>(productDto);
+        var newProduct = ObjectMapper.Mapper.Map<Product>(productDto);
 
         await _productRepository.UpdateAsync(newProduct);
         
@@ -72,6 +71,6 @@ public class ProductService : IProductService
         
         return product == null 
             ? Response<GetProductDto>.Fail("Could not found product with given ID!",404) 
-            : Response<GetProductDto>.Success(_mapper.Map<GetProductDto>(product),200);
+            : Response<GetProductDto>.Success(ObjectMapper.Mapper.Map<GetProductDto>(product),200);
     }
 }

@@ -94,7 +94,6 @@ Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Micros
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
-Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
@@ -165,3 +164,7 @@ Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\obj\Debug\net7.0\refint
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\obj\Debug\net7.0\EcoVerse.ProductManagement.API.pdb
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\obj\Debug\net7.0\EcoVerse.ProductManagement.API.genruntimeconfig.cache
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\obj\Debug\net7.0\ref\EcoVerse.ProductManagement.API.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Humanizer.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Mono.TextTemplating.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\System.CodeDom.dll
