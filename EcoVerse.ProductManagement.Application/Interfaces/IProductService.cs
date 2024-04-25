@@ -15,4 +15,6 @@ public interface IProductService
     Task<Response<NoContent>> DeleteAsync(Guid id);
 
     Task<Response<GetProductDto>> GetByIdAsync(Guid id);
+
+    Task<Response<List<GetProductDto>>> GetByCategory(Guid categoryId);
 }

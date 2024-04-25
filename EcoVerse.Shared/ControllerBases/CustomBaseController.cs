@@ -5,7 +5,7 @@ namespace EcoVerse.Shared.ControllerBases;
 
 public class CustomBaseController : ControllerBase
 {
-    public IActionResult CreateActionResultInstance<T>(Response<T> response)
+    protected static IActionResult CreateActionResultInstance<T>(Response<T> response)
     {
         return new ObjectResult(response)
         {

@@ -9,22 +9,17 @@ public class ProductRepository : IProductRepository
 {
     private readonly ProductDbContext _dbContext;
 
-    public ProductRepository(ProductDbContext dbContext)
-    {
-        _dbContext = dbContext;
-    }
-    
+    public ProductRepository(ProductDbContext dbContext) => _dbContext = dbContext;
+
     public async Task CreateAsync(Product product)
     {
         await _dbContext.Products.AddAsync(product);
         await _dbContext.SaveChangesAsync();
     }
 
-    public async Task<List<Product>> ListAllAsync()
-    {
-        return await _dbContext.Products.AsNoTracking().ToListAsync();
-    }
-
+    public async Task<List<Product>> ListAllAsync() 
+        => await _dbContext.Products.AsNoTracking().ToListAsync();
+    
     public async Task UpdateAsync(Product product)
     {
         _dbContext.Products.Update(product);
@@ -37,9 +32,10 @@ public class ProductRepository : IProductRepository
         await _dbContext.SaveChangesAsync();
     }
 
-    public async Task<Product?> GetByIdAsync(Guid id)
-    {
-        var product = await _dbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
-        return product;
-    }
+    public async Task<Product?> GetByIdAsync(Guid id) 
+        => await _dbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+    
+    public async Task<List<Product>> GetByCategory(Guid categoryId) 
+        => await _dbContext.Products.Where(p => p.CategoryId == categoryId).ToListAsync();
+    
 }

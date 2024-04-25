@@ -9,14 +9,36 @@ public class CustomMapper : Profile
 {
     public CustomMapper()
     {
-        CreateMap<Product, CreateProductDto>().ReverseMap();
-        CreateMap<Product, GetProductDto>().ReverseMap();
-        CreateMap<Product, UpdateProductDto>().ReverseMap();
-        CreateMap<Product, DeleteProductDto>().ReverseMap();
+        CreateMap<Product, CreateProductDto>()
+            .ReverseMap()
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
         
-        CreateMap<Category, CreateCategoryDto>().ReverseMap();
-        CreateMap<Category, GetCategoryDto>().ReverseMap();
-        CreateMap<Category, UpdateCategoryDto>().ReverseMap();
-        CreateMap<Category, DeleteCategoryDto>().ReverseMap();
+        CreateMap<Product, GetProductDto>()
+            .ReverseMap()
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+
+        CreateMap<Product, UpdateProductDto>()
+            .ReverseMap()
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+        
+        CreateMap<Product, DeleteProductDto>()
+            .ReverseMap()
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+        
+        CreateMap<Category, CreateCategoryDto>()
+            .ReverseMap()
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+        
+        CreateMap<Category, GetCategoryDto>()
+            .ReverseMap()
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+        
+        CreateMap<Category, UpdateCategoryDto>()
+            .ReverseMap()
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+        
+        CreateMap<Category, DeleteCategoryDto>()
+            .ReverseMap()
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
     }
 }

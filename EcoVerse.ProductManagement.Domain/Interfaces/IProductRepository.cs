@@ -14,4 +14,6 @@ public interface IProductRepository
     Task DeleteAsync(Product product);
 
     Task<Product?> GetByIdAsync(Guid id);
+
+    Task<List<Product>> GetByCategory(Guid categoryId);
 }

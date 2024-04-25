@@ -44,9 +44,9 @@ public class CategoryService : ICategoryService
         if(existingCategory == null)
             return Response<NoContent>.Fail("Could not found category with given ID!",404);
 
-        var newCategory = ObjectMapper.Mapper.Map<Category>(categoryDto);
+        existingCategory = ObjectMapper.Mapper.Map<Category>(categoryDto);
 
-        await _categoryRepository.UpdateAsync(newCategory);
+        await _categoryRepository.UpdateAsync(existingCategory);
         
         return Response<NoContent>.Success(204);
     }
