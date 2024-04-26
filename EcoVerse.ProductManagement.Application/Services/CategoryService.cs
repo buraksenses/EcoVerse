@@ -2,6 +2,7 @@
 using EcoVerse.ProductManagement.Application.Interfaces;
 using EcoVerse.ProductManagement.Application.Mappings;
 using EcoVerse.ProductManagement.Domain.Entities;
+using EcoVerse.ProductManagement.Domain.Exceptions;
 using EcoVerse.ProductManagement.Domain.Interfaces;
 using EcoVerse.Shared.DTOs;
 
@@ -20,8 +21,7 @@ public class CategoryService : ICategoryService
     {
         var category = ObjectMapper.Mapper.Map<Category>(categoryDto);
         
-        if(category == null)
-            return Response<NoContent>.Fail("Category can not be null!", 400);
+       IsValid(category);
 
         await _categoryRepository.CreateAsync(category);
         
@@ -44,8 +44,7 @@ public class CategoryService : ICategoryService
     {
         var existingCategory = await _categoryRepository.GetByIdAsync(id);
         
-        if(existingCategory == null)
-            return Response<NoContent>.Fail("Could not found category with given ID!",404);
+       IsValid(existingCategory);
 
         existingCategory = ObjectMapper.Mapper.Map<Category>(categoryDto);
 
@@ -58,8 +57,7 @@ public class CategoryService : ICategoryService
     {
         var existingCategory = await _categoryRepository.GetByIdAsync(id);
         
-        if(existingCategory == null)
-            return Response<NoContent>.Fail("Could not found category with given ID!",404);
+       IsValid(existingCategory);
 
         await _categoryRepository.DeleteAsync(existingCategory);
         
@@ -70,8 +68,19 @@ public class CategoryService : ICategoryService
     {
         var category = await _categoryRepository.GetByIdAsync(id);
         
-        return category == null 
-            ? Response<GetCategoryDto>.Fail("Could not found product with given ID!",404) 
-            : Response<GetCategoryDto>.Success(ObjectMapper.Mapper.Map<GetCategoryDto>(category),200);
+        IsValid(category);
+        
+        return Response<GetCategoryDto>.Success(ObjectMapper.Mapper.Map<GetCategoryDto>(category),200);
+    }
+    
+    private static void IsValid(Category? category)
+    {
+        IsNull(category);
+    }
+
+    private static void IsNull(Category? category)
+    {
+        if (category == null)
+            throw new CategoryNotFoundException("Category not found!");
     }
 }
