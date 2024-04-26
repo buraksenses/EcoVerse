@@ -20,11 +20,7 @@ public class CustomMapper : Profile
         CreateMap<Product, UpdateProductDto>()
             .ReverseMap()
             .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
-        
-        CreateMap<Product, DeleteProductDto>()
-            .ReverseMap()
-            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
-        
+
         CreateMap<Category, CreateCategoryDto>()
             .ReverseMap()
             .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));

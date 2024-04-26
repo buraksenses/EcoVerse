@@ -3,6 +3,6 @@
 public record UpdateProductDto(
     string Name, 
     int Quantity, 
-    decimal price,
+    decimal Price,
     string Description 
 );

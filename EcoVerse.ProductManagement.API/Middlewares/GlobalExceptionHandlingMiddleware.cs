@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using EcoVerse.ProductManagement.Domain.Exceptions;
+using Newtonsoft.Json;
 
 namespace EcoVerse.ProductManagement.API.Middlewares;
 
@@ -31,7 +32,7 @@ public class GlobalExceptionHandlingMiddleware
         context.Response.ContentType = "application/json";
         context.Response.StatusCode = exception switch
         {
-            //NotFoundException => StatusCodes.Status404NotFound,
+            ProductNotFoundException => StatusCodes.Status404NotFound,
             // Ekleme yapabileceğiniz diğer özel exception türleri
             _ => StatusCodes.Status500InternalServerError
         };

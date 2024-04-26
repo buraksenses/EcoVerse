@@ -1,8 +1,8 @@
-﻿using EcoVerse.ProductManagement.Application.DTOs;
-using EcoVerse.ProductManagement.Application.DTOs.Product;
+﻿using EcoVerse.ProductManagement.Application.DTOs.Product;
 using EcoVerse.ProductManagement.Application.Interfaces;
 using EcoVerse.ProductManagement.Application.Mappings;
 using EcoVerse.ProductManagement.Domain.Entities;
+using EcoVerse.ProductManagement.Domain.Exceptions;
 using EcoVerse.ProductManagement.Domain.Interfaces;
 using EcoVerse.Shared.DTOs;
 
@@ -18,8 +18,7 @@ public class ProductService : IProductService
     {
         var product = ObjectMapper.Mapper.Map<Product>(productDto);
         
-        if(product == null)
-            return Response<NoContent>.Fail("Product can not be null!", 400);
+        IsValid(product);
 
         await _productRepository.CreateAsync(product);
         
@@ -39,8 +38,7 @@ public class ProductService : IProductService
     {
         var existingProduct = await _productRepository.GetByIdAsync(id);
         
-        if(existingProduct == null)
-            return Response<NoContent>.Fail("Could not found product with given ID!",404);
+        IsValid(existingProduct);
 
         ObjectMapper.Mapper.Map(productDto, existingProduct);
 
@@ -53,8 +51,7 @@ public class ProductService : IProductService
     {
         var existingProduct = await _productRepository.GetByIdAsync(id);
         
-        if(existingProduct == null)
-            return Response<NoContent>.Fail("Could not found product with given ID!",404);
+        IsValid(existingProduct);
 
         await _productRepository.DeleteAsync(existingProduct);
         
@@ -65,9 +62,9 @@ public class ProductService : IProductService
     {
         var product = await _productRepository.GetByIdAsync(id);
         
-        return product == null 
-            ? Response<GetProductDto>.Fail("Could not found product with given ID!",404) 
-            : Response<GetProductDto>.Success(ObjectMapper.Mapper.Map<GetProductDto>(product),200);
+        IsValid(product);
+        
+        return Response<GetProductDto>.Success(ObjectMapper.Mapper.Map<GetProductDto>(product),200);
     }
 
     public async Task<Response<List<GetProductDto>>> GetByCategory(Guid categoryId)
@@ -77,5 +74,16 @@ public class ProductService : IProductService
         var productListDto = ObjectMapper.Mapper.Map<List<GetProductDto>>(products);
         
         return Response<List<GetProductDto>>.Success(productListDto,200);
+    }
+
+    private static void IsValid(Product? product)
+    {
+        IsNull(product);
+    }
+
+    private static void IsNull(Product? product)
+    {
+        if (product == null)
+            throw new ProductNotFoundException("Product not found!");
     }
 }
