@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EcoVerse.ProductManagement.API.props" />
+</Project>

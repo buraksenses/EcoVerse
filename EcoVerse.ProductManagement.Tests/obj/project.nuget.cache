@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "I+wqqZqbx/quWQBXznJgNRO8wrBFrivLj1sgA+eXXUKTt07eg/b0A83LvLnlSI4z67dhtDADvrZ2qeFy2Ol8yQ==",
+  "dgSpecHash": "npeVB2L/UNJwlUR3EQejVoPdCBK+ndW7KfQpOiWwbTu5+nHlrLZvZbuB6kD7r9rLAe+Yj+jv+ASryt5RKeXtsA==",
   "success": true,
   "projectFilePath": "Z:\\.NET Projects\\EcoVerse\\EcoVerse.ProductManagement.Tests\\EcoVerse.ProductManagement.Tests.csproj",
   "expectedPackageFiles": [
@@ -92,7 +92,10 @@
     "C:\\Users\\Burak\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\Burak\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
+    "C:\\Users\\Burak\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
+    "C:\\Users\\Burak\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Burak\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Burak\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512"
   ],
   "logs": []
 }
