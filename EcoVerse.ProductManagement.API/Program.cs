@@ -1,5 +1,5 @@
 using EcoVerse.ProductManagement.API.Extensions;
-using EcoVerse.ProductManagement.Infrastructure.Configurations;
+using EcoVerse.ProductManagement.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +15,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 
