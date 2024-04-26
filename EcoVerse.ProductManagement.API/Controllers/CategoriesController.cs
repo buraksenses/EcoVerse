@@ -29,7 +29,6 @@ public class CategoriesController : CustomBaseController
             pageNumber, pageSize));
     }
 
-
     [HttpPut("{id:guid}")]
     public async Task<IActionResult> UpdateAsync(Guid id, UpdateCategoryDto updateCategoryDto) 
         => CreateActionResultInstance(await _categoryService.UpdateAsync(id, updateCategoryDto));
@@ -37,4 +36,8 @@ public class CategoriesController : CustomBaseController
     [HttpDelete("{id:guid}")]
     public async Task<IActionResult> DeleteAsync(Guid id) 
         => CreateActionResultInstance(await _categoryService.DeleteAsync(id));
+    
+    [HttpGet("{id:guid}")]
+    public async Task<IActionResult> GetByIdAsync(Guid id) 
+        => CreateActionResultInstance(await _categoryService.GetByIdAsync(id));
 }
