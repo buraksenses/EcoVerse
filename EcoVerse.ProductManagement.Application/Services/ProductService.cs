@@ -25,9 +25,12 @@ public class ProductService : IProductService
         return Response<NoContent>.Success(201);
     }
 
-    public async Task<Response<List<GetProductDto>>> ListAllAsync()
+    public async Task<Response<List<GetProductDto>>> ListAllAsync(string? filterOn = null, string? filterQuery = null,string?
+            sortBy = null,bool? isAscending = null,
+        int pageNumber = 1, int pageSize = 1000)
     {
-        var products = await _productRepository.ListAllAsync();
+        var products = await _productRepository.ListAllAsync(filterOn, filterQuery, sortBy, isAscending,
+            pageNumber, pageSize);
 
         var productListDto = ObjectMapper.Mapper.Map<List<GetProductDto>>(products);
         

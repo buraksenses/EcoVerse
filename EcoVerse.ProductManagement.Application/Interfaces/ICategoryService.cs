@@ -7,7 +7,9 @@ public interface ICategoryService
 {
     Task<Response<NoContent>> CreateAsync(CreateCategoryDto productDto);
 
-    Task<Response<List<GetCategoryDto>>> ListAllAsync();
+    Task<Response<List<GetCategoryDto>>> ListAllAsync(string? filterOn = null, string? filterQuery = null,string?
+            sortBy = null,bool? isAscending = null,
+        int pageNumber = 1, int pageSize = 1000);
 
     Task<Response<NoContent>> UpdateAsync(Guid id, UpdateCategoryDto productDto);
 

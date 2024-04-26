@@ -168,3 +168,6 @@ Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Humani
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\Mono.TextTemplating.dll
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\System.CodeDom.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\FluentValidation.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

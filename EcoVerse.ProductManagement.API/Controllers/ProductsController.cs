@@ -23,8 +23,13 @@ public class ProductsController : CustomBaseController
         => CreateActionResultInstance(await _productService.CreateAsync(productDto));
 
     [HttpGet]
-    public async Task<IActionResult> ListAllAsync() 
-        => CreateActionResultInstance(await _productService.ListAllAsync());
+    public async Task<IActionResult> ListAllAsync(string? filterOn = null, string? filterQuery = null,string?
+            sortBy = null,bool? isAscending = null,
+        int pageNumber = 1, int pageSize = 1000)
+    {
+        return CreateActionResultInstance(await _productService.ListAllAsync(filterOn, filterQuery, sortBy, isAscending,
+            pageNumber, pageSize));
+    }
 
     [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetByIdAsync(Guid id) 

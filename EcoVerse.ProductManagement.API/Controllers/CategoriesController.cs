@@ -21,8 +21,13 @@ public class CategoriesController : CustomBaseController
         => CreateActionResultInstance(await _categoryService.CreateAsync(categoryDto));
 
     [HttpGet]
-    public async Task<IActionResult> ListAllAsync() 
-        => CreateActionResultInstance(await _categoryService.ListAllAsync());
+    public async Task<IActionResult> ListAllAsync(string? filterOn = null, string? filterQuery = null,string?
+            sortBy = null,bool? isAscending = null,
+        int pageNumber = 1, int pageSize = 1000)
+    {
+        return CreateActionResultInstance(await _categoryService.ListAllAsync(filterOn, filterQuery, sortBy, isAscending,
+            pageNumber, pageSize));
+    }
 
 
     [HttpPut("{id:guid}")]

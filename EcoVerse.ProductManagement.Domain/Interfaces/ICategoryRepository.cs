@@ -6,7 +6,9 @@ public interface ICategoryRepository
 {
     Task CreateAsync(Category category);
 
-    Task<List<Category>> ListAllAsync();
+    Task<List<Category>> ListAllAsync(string? filterOn = null, string? filterQuery = null,string?
+            sortBy = null,bool? isAscending = null,
+        int pageNumber = 1, int pageSize = 1000);
 
     Task UpdateAsync(Category category);
 

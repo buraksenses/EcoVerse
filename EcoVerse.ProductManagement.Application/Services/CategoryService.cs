@@ -18,21 +18,24 @@ public class CategoryService : ICategoryService
     
     public async Task<Response<NoContent>> CreateAsync(CreateCategoryDto categoryDto)
     {
-        var product = ObjectMapper.Mapper.Map<Category>(categoryDto);
+        var category = ObjectMapper.Mapper.Map<Category>(categoryDto);
         
-        if(product == null)
+        if(category == null)
             return Response<NoContent>.Fail("Category can not be null!", 400);
 
-        await _categoryRepository.CreateAsync(product);
+        await _categoryRepository.CreateAsync(category);
         
         return Response<NoContent>.Success(201);
     }
 
-    public async Task<Response<List<GetCategoryDto>>> ListAllAsync()
+    public async Task<Response<List<GetCategoryDto>>> ListAllAsync(string? filterOn = null, string? filterQuery = null,string?
+            sortBy = null,bool? isAscending = null,
+        int pageNumber = 1, int pageSize = 1000)
     {
-        var products = await _categoryRepository.ListAllAsync();
+        var categories = await _categoryRepository.ListAllAsync(filterOn, filterQuery, sortBy, isAscending,
+            pageNumber, pageSize);
 
-        var categoryListDto = ObjectMapper.Mapper.Map<List<GetCategoryDto>>(products);
+        var categoryListDto = ObjectMapper.Mapper.Map<List<GetCategoryDto>>(categories);
         
         return Response<List<GetCategoryDto>>.Success(categoryListDto,200);
     }

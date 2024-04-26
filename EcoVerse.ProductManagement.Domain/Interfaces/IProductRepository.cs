@@ -7,7 +7,9 @@ public interface IProductRepository
 {
     Task CreateAsync(Product product);
 
-    Task<List<Product>> ListAllAsync();
+    Task<List<Product>> ListAllAsync(string? filterOn = null, string? filterQuery = null,string?
+            sortBy = null,bool? isAscending = null,
+        int pageNumber = 1, int pageSize = 1000);
 
     Task UpdateAsync(Product product);
 
