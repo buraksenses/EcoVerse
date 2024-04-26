@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = EcoVerse.IdentityServer
+build_property.ProjectDir = Z:\.NET Projects\EcoVerse\IdentityServer\EcoVerse.IdentityServer\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

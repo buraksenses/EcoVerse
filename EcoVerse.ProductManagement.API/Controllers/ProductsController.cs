@@ -1,6 +1,7 @@
 ﻿using EcoVerse.ProductManagement.Application.DTOs.Product;
 using EcoVerse.ProductManagement.Application.Interfaces;
 using EcoVerse.Shared.ControllerBases;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcoVerse.ProductManagement.API.Controllers;

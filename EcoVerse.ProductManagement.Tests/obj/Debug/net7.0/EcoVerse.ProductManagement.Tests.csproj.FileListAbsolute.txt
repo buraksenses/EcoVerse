@@ -190,9 +190,10 @@ Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\EcoV
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\EcoVerse.ProductManagement.Tests.AssemblyInfoInputs.cache
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\EcoVerse.ProductManagement.Tests.AssemblyInfo.cs
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\EcoVerse.ProductManagement.Tests.csproj.CoreCompileInputs.cache
-Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\EcoVerse.ProductManagement.Tests.csproj.CopyComplete
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\EcoVerse.ProductManagement.Tests.dll
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\refint\EcoVerse.ProductManagement.Tests.dll
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\EcoVerse.ProductManagement.Tests.pdb
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\EcoVerse.ProductManagement.Tests.genruntimeconfig.cache
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\ref\EcoVerse.ProductManagement.Tests.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\EcoVerse.ProductManagement.Tests.sourcelink.json
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.Tests\obj\Debug\net7.0\EcoVerse.AA2F819A.Up2Date
