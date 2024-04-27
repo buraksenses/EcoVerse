@@ -241,7 +241,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "Z:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj": {
+                "projectPath": "Z:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
