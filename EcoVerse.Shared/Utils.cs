@@ -1,9 +1,11 @@
-﻿namespace EcoVerse.Shared;
-
-public static class Utils
+﻿namespace EcoVerse.Shared
 {
-    public static bool BeAValidGuid(Guid accountId)
+    public static class Utils
     {
-        return accountId != Guid.Empty && accountId.ToString().Length == 36;
+        public static bool BeAValidGuid(Guid accountId)
+        {
+            return accountId != Guid.Empty && accountId.ToString().Length == 36;
+        }
     }
 }
+

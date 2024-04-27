@@ -1,15 +1,17 @@
 ﻿using EcoVerse.Shared.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EcoVerse.Shared.ControllerBases;
-
-public class CustomBaseController : ControllerBase
+namespace EcoVerse.Shared.ControllerBases
 {
-    protected static IActionResult CreateActionResultInstance<T>(Response<T> response)
+    public class CustomBaseController : ControllerBase
     {
-        return new ObjectResult(response)
+        protected static IActionResult CreateActionResultInstance<T>(Response<T> response)
         {
-            StatusCode = response.StatusCode
-        };
+            return new ObjectResult(response)
+            {
+                StatusCode = response.StatusCode
+            };
+        }
     }
 }
+

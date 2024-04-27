@@ -1,43 +1,45 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace EcoVerse.Shared.DTOs;
-
-public class Response<T>
+namespace EcoVerse.Shared.DTOs
 {
-    public T Data { get; set; }
-
-    [JsonIgnore]
-    public int StatusCode { get; set; }
-
-    [JsonIgnore]
-    public bool IsSuccessful { get; set; }
-
-    public List<string> Errors { get; set; }
-
-    // Static Factory Method
-    public static Response<T> Success(T data, int statusCode)
+    public class Response<T>
     {
-        return new Response<T> { Data = data, StatusCode = statusCode, IsSuccessful = true };
-    }
+        public T Data { get; set; }
 
-    public static Response<T> Success(int statusCode)
-    {
-        return new Response<T> { Data = default(T), StatusCode = statusCode, IsSuccessful = true };
-    }
+        [JsonIgnore]
+        public int StatusCode { get; set; }
 
-    public static Response<T> Fail(List<string> errors, int statusCode)
+        [JsonIgnore]
+        public bool IsSuccessful { get; set; }
 
-    {
-        return new Response<T>
+        public List<string> Errors { get; set; }
+
+        // Static Factory Method
+        public static Response<T> Success(T data, int statusCode)
         {
-            Errors = errors,
-            StatusCode = statusCode,
-            IsSuccessful = false
-        };
-    }
+            return new Response<T> { Data = data, StatusCode = statusCode, IsSuccessful = true };
+        }
 
-    public static Response<T> Fail(string error, int statusCode)
-    {
-        return new Response<T> { Errors = new List<string>() { error }, StatusCode = statusCode, IsSuccessful = false };
+        public static Response<T> Success(int statusCode)
+        {
+            return new Response<T> { Data = default(T), StatusCode = statusCode, IsSuccessful = true };
+        }
+
+        public static Response<T> Fail(List<string> errors, int statusCode)
+
+        {
+            return new Response<T>
+            {
+                Errors = errors,
+                StatusCode = statusCode,
+                IsSuccessful = false
+            };
+        }
+
+        public static Response<T> Fail(string error, int statusCode)
+        {
+            return new Response<T> { Errors = new List<string>() { error }, StatusCode = statusCode, IsSuccessful = false };
+        }
     }
 }
+

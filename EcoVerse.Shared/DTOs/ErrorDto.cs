@@ -1,6 +1,8 @@
-﻿namespace EcoVerse.Shared.DTOs;
-
-public class ErrorDto
+﻿namespace EcoVerse.Shared.DTOs
 {
-    public List<string> Errors { get; set; }
+    public class ErrorDto
+    {
+        public List<string> Errors { get; set; }
+    }
 }
+

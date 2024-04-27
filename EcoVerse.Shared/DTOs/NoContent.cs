@@ -1,6 +1,8 @@
-﻿namespace EcoVerse.Shared.DTOs;
-
-public class NoContent
+﻿namespace EcoVerse.Shared.DTOs
 {
+    public class NoContent
+    {
     
+    }
 }
+
