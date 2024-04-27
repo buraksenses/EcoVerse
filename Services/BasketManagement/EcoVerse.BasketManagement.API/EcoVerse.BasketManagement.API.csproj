@@ -13,4 +13,9 @@
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\EcoVerse.Shared\EcoVerse.Shared.csproj" />
+      <ProjectReference Include="..\EcoVerse.BasketManagement.Application\EcoVerse.BasketManagement.Application.csproj" />
+    </ItemGroup>
+
 </Project>

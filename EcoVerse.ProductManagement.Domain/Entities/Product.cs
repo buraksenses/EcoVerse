@@ -1,4 +1,4 @@
-﻿using EcoVerse.ProductManagement.Domain.Entities.Base;
+﻿using EcoVerse.Shared.Entities;
 
 namespace EcoVerse.ProductManagement.Domain.Entities;
 

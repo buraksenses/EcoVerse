@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\EcoVerse.BasketManagement.Infrastructure\EcoVerse.BasketManagement.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "EcoVerse.BasketManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/EcoVerse.BasketManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoVerse.BasketManagement.Domain.dll": {}
+        }
+      },
+      "EcoVerse.BasketManagement.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "EcoVerse.BasketManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EcoVerse.BasketManagement.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoVerse.BasketManagement.Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "EcoVerse.BasketManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../EcoVerse.BasketManagement.Domain/EcoVerse.BasketManagement.Domain.csproj",
+      "msbuildProject": "../EcoVerse.BasketManagement.Domain/EcoVerse.BasketManagement.Domain.csproj"
+    },
+    "EcoVerse.BasketManagement.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../EcoVerse.BasketManagement.Infrastructure/EcoVerse.BasketManagement.Infrastructure.csproj",
+      "msbuildProject": "../EcoVerse.BasketManagement.Infrastructure/EcoVerse.BasketManagement.Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "EcoVerse.BasketManagement.Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Burak\\.nuget\\packages\\": {}
@@ -31,7 +68,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "Z:\\.NET Projects\\EcoVerse\\Services\\BasketManagement\\EcoVerse.BasketManagement.Infrastructure\\EcoVerse.BasketManagement.Infrastructure.csproj": {
+              "projectPath": "Z:\\.NET Projects\\EcoVerse\\Services\\BasketManagement\\EcoVerse.BasketManagement.Infrastructure\\EcoVerse.BasketManagement.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

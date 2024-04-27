@@ -1,4 +1,4 @@
-﻿namespace EcoVerse.ProductManagement.Domain.Entities.Base;
+﻿namespace EcoVerse.Shared.Entities;
 
 public abstract class BaseEntity
 {
