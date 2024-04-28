@@ -44,7 +44,7 @@ public class CartService : ICartService
         if (item == null)
             throw new Exception("Item cannot be null!");
 
-        await _cartRepository.UpdateQuantityAsync(userId, cart.Data, item, updateCartDto.quantity);
+        await _cartRepository.UpdateQuantityAsync(userId, cart.Data, item, updateCartDto.Quantity);
         
         cart.Data.LastModifiedBy = Guid.Parse(userId);
         cart.Data.LastModifiedDate = DateTime.Now;

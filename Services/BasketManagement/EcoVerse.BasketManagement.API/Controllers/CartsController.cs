@@ -30,7 +30,7 @@ public class CartsController : CustomBaseController
             addToCartDto));
 
     [HttpPut("items/{itemId}")]
-    public async Task<IActionResult> UpdateQuantityAsync(UpdateCartDto updateCartDto)
+    public async Task<IActionResult> UpdateQuantityAsync(Guid itemId, UpdateCartDto updateCartDto)
         => CreateActionResultInstance(
             await _cartService.UpdateQuantityAsync(_sharedIdentityService.GetUserId, updateCartDto));
 

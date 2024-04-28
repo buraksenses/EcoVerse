@@ -1,11 +1,13 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using EcoVerse.BasketManagement.Application.Interfaces;
 using EcoVerse.BasketManagement.Application.Services;
+using EcoVerse.BasketManagement.Application.Validations;
 using EcoVerse.BasketManagement.Domain.Interfaces;
 using EcoVerse.BasketManagement.Infrastructure.Repositories;
 using EcoVerse.BasketManagement.Infrastructure.Services;
 using EcoVerse.BasketManagement.Infrastructure.Settings;
 using EcoVerse.Shared.Services;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -46,6 +48,7 @@ public static class ApplicationServiceExtensions
         services.AddScoped<ICartRepository, CartRepository>();
         services.AddScoped<ICartService, CartService>();
         
+        
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
         {
             options.Authority = config["IdentityServerURL"];
@@ -53,6 +56,9 @@ public static class ApplicationServiceExtensions
             options.RequireHttpsMetadata = false;
         });
 
+        services.AddFluentValidation(fv => 
+            fv.RegisterValidatorsFromAssemblyContaining<AddToCartValidator>());
+        
         return services;
     }
 }

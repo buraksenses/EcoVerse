@@ -1,4 +1,5 @@
 using EcoVerse.BasketManagement.API.Extensions;
+using EcoVerse.BasketManagement.Application.Validations;
 
 var builder = WebApplication.CreateBuilder(args);
 
