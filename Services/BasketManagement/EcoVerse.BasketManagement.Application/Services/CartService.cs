@@ -1,5 +1,6 @@
 ﻿using EcoVerse.BasketManagement.Application.DTOs;
 using EcoVerse.BasketManagement.Application.Interfaces;
+using EcoVerse.BasketManagement.Application.Mappings;
 using EcoVerse.BasketManagement.Domain.Entities;
 using EcoVerse.BasketManagement.Domain.Interfaces;
 using EcoVerse.Shared.DTOs;
@@ -18,53 +19,58 @@ public class CartService : ICartService
     
     public async Task<Response<bool>> AddItemAsync(string userId, AddToCartDto addToCartDto)
     {
-        var cart = await GetByUserId(userId);
+        var cartDto = await GetByUserId(userId);
 
-        await _cartRepository.AddItemAsync(userId, cart.Data, addToCartDto.CartItem);
+        var cart = ObjectMapper.Mapper.Map<Cart>(cartDto.Data);
 
-        cart.Data.LastModifiedBy = Guid.Parse(userId);
-        cart.Data.LastModifiedDate = DateTime.Now;
+        cart.LastModifiedBy = Guid.Parse(userId);
+        cart.LastModifiedDate = DateTime.Now;
+
+        await _cartRepository.AddItemAsync(userId, cart, addToCartDto.CartItem);
 
         return Response<bool>.Success(201);
     }
 
-    public async Task<Response<Cart>> GetByUserId(string userId)
+    public async Task<Response<GetCartDto>> GetByUserId(string userId)
     {
         var cart = await _cartRepository.GetByUserId(userId) 
                    ?? await _cartRepository.CreateAndGetCartAsync(userId);
 
-        return Response<Cart>.Success(cart, 200);
+        return Response<GetCartDto>.Success(ObjectMapper.Mapper.Map<GetCartDto>(cart), 200);
     }
 
     public async Task<Response<NoContent>> UpdateQuantityAsync(string userId, Guid itemId, UpdateCartDto updateCartDto)
     {
-        var cart = await GetByUserId(userId);
+        var cartDto = await GetByUserId(userId);
 
-        var item = cart.Data.CartItems.FirstOrDefault(c => c.Id == itemId);
+        var cart = ObjectMapper.Mapper.Map<Cart>(cartDto.Data);
 
-        if (item == null)
-            throw new CartItemNotFoundException("Could not found an item with given ID!");
+        var item = cart.CartItems.FirstOrDefault(c => c.Id == itemId);
 
-        await _cartRepository.UpdateQuantityAsync(userId, cart.Data, item, updateCartDto.Quantity);
+        IsCartItemValid(item);
+
+        cart.LastModifiedBy = Guid.Parse(userId);
+        cart.LastModifiedDate = DateTime.Now;
         
-        cart.Data.LastModifiedBy = Guid.Parse(userId);
-        cart.Data.LastModifiedDate = DateTime.Now;
+        await _cartRepository.UpdateQuantityAsync(userId, cart, item, updateCartDto.Quantity);
         
         return Response<NoContent>.Success(204);
     }
 
     public async Task<Response<NoContent>> DeleteItemAsync(string userId, DeleteFromCartDto deleteFromCartDto)
     {
-        var cart = await GetByUserId(userId);
-        var item = cart.Data.CartItems.FirstOrDefault(c => c.Id == deleteFromCartDto.ItemId);
+        var cartDto = await GetByUserId(userId);
 
-        if (item == null)
-            throw new CartItemNotFoundException("Could not found an item with given ID!");
+        var cart = ObjectMapper.Mapper.Map<Cart>(cartDto);
         
-        await _cartRepository.DeleteItemAsync(userId, cart.Data, item);
+        var item = cart.CartItems.FirstOrDefault(c => c.Id == deleteFromCartDto.ItemId);
+
+        IsCartItemValid(item);
         
-        cart.Data.LastModifiedBy = Guid.Parse(userId);
-        cart.Data.LastModifiedDate = DateTime.Now;
+        cart.LastModifiedBy = Guid.Parse(userId);
+        cart.LastModifiedDate = DateTime.Now;
+        
+        await _cartRepository.DeleteItemAsync(userId, cart, item);
         
         return Response<NoContent>.Success(204);
     }
@@ -72,5 +78,11 @@ public class CartService : ICartService
     public Task CheckoutAsync()
     {
         return null;
+    }
+
+    private static void IsCartItemValid(CartItem? cartItem)
+    {
+        if (cartItem == null)
+            throw new CartItemNotFoundException("Could not found an item with given ID!");
     }
 }

@@ -8,7 +8,7 @@ public interface ICartService
 {
     Task<Response<bool>> AddItemAsync(string userId, AddToCartDto addToCartDto);
 
-    Task<Response<Cart>> GetByUserId(string userId);
+    Task<Response<GetCartDto>> GetByUserId(string userId);
 
     Task<Response<NoContent>> UpdateQuantityAsync(string userId, Guid itemId, UpdateCartDto updateCartDto);
 
