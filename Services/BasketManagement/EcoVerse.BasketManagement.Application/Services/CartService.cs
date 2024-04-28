@@ -1,6 +1,7 @@
-﻿using EcoVerse.BasketManagement.Domain.Entities;
+﻿using EcoVerse.BasketManagement.Application.DTOs;
+using EcoVerse.BasketManagement.Application.Interfaces;
+using EcoVerse.BasketManagement.Domain.Entities;
 using EcoVerse.BasketManagement.Domain.Interfaces;
-using EcoVerse.BasketManagement.Infrastructure.Interfaces;
 using EcoVerse.Shared.DTOs;
 
 namespace EcoVerse.BasketManagement.Application.Services;
@@ -14,12 +15,15 @@ public class CartService : ICartService
         _cartRepository = cartRepository;
     }
     
-    public async Task<Response<bool>> AddItemAsync(string userId, CartItem cartItem)
+    public async Task<Response<bool>> AddItemAsync(string userId, AddToCartDto addToCartDto)
     {
         var cart = await GetByUserId(userId);
 
-        await _cartRepository.AddItemAsync(userId, cart.Data, cartItem);
-        
+        await _cartRepository.AddItemAsync(userId, cart.Data, addToCartDto.CartItem);
+
+        cart.Data.LastModifiedBy = Guid.Parse(userId);
+        cart.Data.LastModifiedDate = DateTime.Now;
+
         return Response<bool>.Success(201);
     }
 
@@ -31,29 +35,35 @@ public class CartService : ICartService
         return Response<Cart>.Success(cart, 200);
     }
 
-    public async Task<Response<NoContent>> UpdateQuantityAsync(string userId, Guid itemId, int quantity)
+    public async Task<Response<NoContent>> UpdateQuantityAsync(string userId, UpdateCartDto updateCartDto)
     {
         var cart = await GetByUserId(userId);
 
-        var item = cart.Data.CartItems.FirstOrDefault(c => c.Id == itemId);
+        var item = cart.Data.CartItems.FirstOrDefault(c => c.Id == updateCartDto.ItemId);
 
         if (item == null)
             throw new Exception("Item cannot be null!");
 
-        await _cartRepository.UpdateQuantityAsync(userId, cart.Data, item, quantity);
+        await _cartRepository.UpdateQuantityAsync(userId, cart.Data, item, updateCartDto.quantity);
+        
+        cart.Data.LastModifiedBy = Guid.Parse(userId);
+        cart.Data.LastModifiedDate = DateTime.Now;
         
         return Response<NoContent>.Success(204);
     }
 
-    public async Task<Response<NoContent>> DeleteItemAsync(string userId, Guid itemId)
+    public async Task<Response<NoContent>> DeleteItemAsync(string userId, DeleteFromCartDto deleteFromCartDto)
     {
         var cart = await GetByUserId(userId);
-        var item = cart.Data.CartItems.FirstOrDefault(c => c.Id == itemId);
+        var item = cart.Data.CartItems.FirstOrDefault(c => c.Id == deleteFromCartDto.ItemId);
 
         if (item == null)
             throw new Exception("Item cannot be null!");
         
         await _cartRepository.DeleteItemAsync(userId, cart.Data, item);
+        
+        cart.Data.LastModifiedBy = Guid.Parse(userId);
+        cart.Data.LastModifiedDate = DateTime.Now;
         
         return Response<NoContent>.Success(204);
     }

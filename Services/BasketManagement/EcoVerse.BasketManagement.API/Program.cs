@@ -1,7 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
+using EcoVerse.BasketManagement.Application.Interfaces;
 using EcoVerse.BasketManagement.Application.Services;
 using EcoVerse.BasketManagement.Domain.Interfaces;
-using EcoVerse.BasketManagement.Infrastructure.Interfaces;
 using EcoVerse.BasketManagement.Infrastructure.Repositories;
 using EcoVerse.BasketManagement.Infrastructure.Services;
 using EcoVerse.BasketManagement.Infrastructure.Settings;

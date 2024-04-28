@@ -17,7 +17,7 @@ public class CartRepository : ICartRepository
 
     public async Task<Cart> CreateAndGetCartAsync(string userId)
     { 
-        await _redisService.GetDb().StringSetAsync(userId, JsonSerializer.Serialize(new Cart()));
+        await _redisService.GetDb().StringSetAsync(userId, JsonSerializer.Serialize(new Cart{UserId = userId}));
         
         var existBasket = await _redisService.GetDb().StringGetAsync(userId);
 

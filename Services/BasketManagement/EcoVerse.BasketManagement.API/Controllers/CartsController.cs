@@ -1,5 +1,6 @@
-﻿using EcoVerse.BasketManagement.Domain.Entities;
-using EcoVerse.BasketManagement.Infrastructure.Interfaces;
+﻿using EcoVerse.BasketManagement.Application.DTOs;
+using EcoVerse.BasketManagement.Application.Interfaces;
+using EcoVerse.BasketManagement.Domain.Entities;
 using EcoVerse.Shared.ControllerBases;
 using EcoVerse.Shared.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -24,15 +25,17 @@ public class CartsController : CustomBaseController
         => CreateActionResultInstance(await _cartService.GetByUserId(_sharedIdentityService.GetUserId));
 
     [HttpPost("items")]
-    public async Task<IActionResult> AddItemAsync(CartItem cartItem) 
-        => CreateActionResultInstance(await _cartService.AddItemAsync(_sharedIdentityService.GetUserId, cartItem));
+    public async Task<IActionResult> AddItemAsync(AddToCartDto addToCartDto)
+        => CreateActionResultInstance(await _cartService.AddItemAsync(_sharedIdentityService.GetUserId,
+            addToCartDto));
 
     [HttpPut("items/{itemId}")]
-    public async Task<IActionResult> UpdateQuantityAsync(Guid itemId, int quantity) 
+    public async Task<IActionResult> UpdateQuantityAsync(UpdateCartDto updateCartDto)
         => CreateActionResultInstance(
-            await _cartService.UpdateQuantityAsync(_sharedIdentityService.GetUserId, itemId, quantity));
+            await _cartService.UpdateQuantityAsync(_sharedIdentityService.GetUserId, updateCartDto));
 
     [HttpDelete("items")]
-    public async Task<IActionResult> DeleteItemAsync(Guid itemId) 
-        => CreateActionResultInstance(await _cartService.DeleteItemAsync(_sharedIdentityService.GetUserId, itemId));
+    public async Task<IActionResult> DeleteItemAsync(DeleteFromCartDto deleteFromCartDto)
+        => CreateActionResultInstance(
+            await _cartService.DeleteItemAsync(_sharedIdentityService.GetUserId, deleteFromCartDto));
 }
