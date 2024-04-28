@@ -24,12 +24,12 @@ public class GlobalExceptionHandler
         }
         catch (Exception ex)
         {
-            _logger.LogError($"Something went wrong: {ex}");
+            _logger.LogError($"Something went wrong: {ex.Message}");
             await HandleExceptionAsync(httpContext, ex);
         }
     }
 
-    private static Task HandleExceptionAsync(HttpContext context, Exception exception)
+    private static async Task HandleExceptionAsync(HttpContext context, Exception exception)
     {
         context.Response.ContentType = "application/json";
         context.Response.StatusCode = exception switch
@@ -38,16 +38,21 @@ public class GlobalExceptionHandler
             CategoryNotFoundException => StatusCodes.Status404NotFound,
             CartItemNotFoundException => StatusCodes.Status404NotFound,
             CartNotFoundException => StatusCodes.Status404NotFound,
-            // Ekleme yapabileceğiniz diğer özel exception türleri
+            CartItemAlreadyExistsException => StatusCodes.Status400BadRequest,
+            CartSaveException => StatusCodes.Status500InternalServerError,
             _ => StatusCodes.Status500InternalServerError
         };
 
-        return context.Response.WriteAsync(new ErrorDetails
+        var errorDetails = new ErrorDetails
         {
             StatusCode = context.Response.StatusCode,
             Message = exception.Message
-        }.ToString());
+        };
+        
+        var errorJson = JsonConvert.SerializeObject(errorDetails);
+        await context.Response.WriteAsync(errorJson);
     }
+
 }
 
 public class ErrorDetails

@@ -3,6 +3,7 @@ using EcoVerse.BasketManagement.Domain.Entities;
 using EcoVerse.BasketManagement.Domain.Interfaces;
 using EcoVerse.BasketManagement.Infrastructure.Services;
 using EcoVerse.Shared.DTOs;
+using EcoVerse.Shared.Exceptions;
 
 namespace EcoVerse.BasketManagement.Infrastructure.Repositories;
 
@@ -60,7 +61,7 @@ public class CartRepository : ICartRepository
         var status = await _redisService.GetDb().StringSetAsync(userId, JsonSerializer.Serialize(cart));
 
         if (!status)
-            throw new Exception("Cart could not be saved!");
+            throw new CartSaveException("Cart could not be saved!");
 
         return status;
     }
