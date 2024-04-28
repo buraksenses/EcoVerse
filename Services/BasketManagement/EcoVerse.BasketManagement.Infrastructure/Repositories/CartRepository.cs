@@ -17,7 +17,7 @@ public class CartRepository : ICartRepository
 
     public async Task<Cart> CreateAndGetCartAsync(string userId)
     { 
-        await _redisService.GetDb().StringSetAsync(userId, JsonSerializer.Serialize(new Cart{UserId = userId}));
+        await _redisService.GetDb().StringSetAsync(userId, JsonSerializer.Serialize(new Cart{UserId = userId, CreatedBy = Guid.Parse(userId)}));
         
         var existBasket = await _redisService.GetDb().StringGetAsync(userId);
 
@@ -26,6 +26,9 @@ public class CartRepository : ICartRepository
 
     public async Task<bool> AddItemAsync(string userId, Cart cart, CartItem cartItem)
     {
+        if (cart.CartItems.Exists(x => x.Id == cartItem.Id))
+            throw new Exception("Can not add an item that has the same id with one of the list items!");
+        
         cart.CartItems.Add(cartItem);
 
         return await SaveAsync(userId, cart);

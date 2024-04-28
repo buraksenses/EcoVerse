@@ -61,3 +61,7 @@ Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.AP
 Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\obj\Debug\net8.0\EcoVerse.BasketManagement.API.pdb
 Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\obj\Debug\net8.0\EcoVerse.BasketManagement.API.genruntimeconfig.cache
 Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\obj\Debug\net8.0\ref\EcoVerse.BasketManagement.API.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\bin\Debug\net8.0\AutoMapper.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\bin\Debug\net8.0\FluentValidation.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

@@ -1,5 +1,5 @@
 using EcoVerse.BasketManagement.API.Extensions;
-using EcoVerse.BasketManagement.Application.Validations;
+using EcoVerse.Shared.Exceptions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +14,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<GlobalExceptionHandler>();
 
 app.UseHttpsRedirection();
 

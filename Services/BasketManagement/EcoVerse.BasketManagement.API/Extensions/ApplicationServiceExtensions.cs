@@ -52,7 +52,7 @@ public static class ApplicationServiceExtensions
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
         {
             options.Authority = config["IdentityServerURL"];
-            options.Audience = "resource_catalog";
+            options.Audience = "resource_basket";
             options.RequireHttpsMetadata = false;
         });
 

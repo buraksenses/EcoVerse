@@ -1,14 +1,16 @@
 ﻿using EcoVerse.ProductManagement.Domain.Exceptions;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace EcoVerse.ProductManagement.API.Middlewares;
+namespace EcoVerse.Shared.Exceptions;
 
-public class GlobalExceptionHandlingMiddleware
+public class GlobalExceptionHandler
 {
     private readonly RequestDelegate _next;
-    private readonly ILogger<GlobalExceptionHandlingMiddleware> _logger;
+    private readonly ILogger<GlobalExceptionHandler> _logger;
 
-    public GlobalExceptionHandlingMiddleware(RequestDelegate next, ILogger<GlobalExceptionHandlingMiddleware> logger)
+    public GlobalExceptionHandler(RequestDelegate next, ILogger<GlobalExceptionHandler> logger)
     {
         _next = next;
         _logger = logger;
@@ -33,6 +35,9 @@ public class GlobalExceptionHandlingMiddleware
         context.Response.StatusCode = exception switch
         {
             ProductNotFoundException => StatusCodes.Status404NotFound,
+            CategoryNotFoundException => StatusCodes.Status404NotFound,
+            CartItemNotFoundException => StatusCodes.Status404NotFound,
+            CartNotFoundException => StatusCodes.Status404NotFound,
             // Ekleme yapabileceğiniz diğer özel exception türleri
             _ => StatusCodes.Status500InternalServerError
         };

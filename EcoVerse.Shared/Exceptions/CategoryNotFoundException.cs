@@ -1,4 +1,4 @@
-﻿namespace EcoVerse.ProductManagement.Domain.Exceptions;
+﻿namespace EcoVerse.Shared.Exceptions;
 
 public class CategoryNotFoundException : Exception
 {

@@ -3,6 +3,7 @@ using EcoVerse.BasketManagement.Application.Interfaces;
 using EcoVerse.BasketManagement.Domain.Entities;
 using EcoVerse.BasketManagement.Domain.Interfaces;
 using EcoVerse.Shared.DTOs;
+using EcoVerse.Shared.Exceptions;
 
 namespace EcoVerse.BasketManagement.Application.Services;
 
@@ -35,14 +36,14 @@ public class CartService : ICartService
         return Response<Cart>.Success(cart, 200);
     }
 
-    public async Task<Response<NoContent>> UpdateQuantityAsync(string userId, UpdateCartDto updateCartDto)
+    public async Task<Response<NoContent>> UpdateQuantityAsync(string userId, Guid itemId, UpdateCartDto updateCartDto)
     {
         var cart = await GetByUserId(userId);
 
-        var item = cart.Data.CartItems.FirstOrDefault(c => c.Id == updateCartDto.ItemId);
+        var item = cart.Data.CartItems.FirstOrDefault(c => c.Id == itemId);
 
         if (item == null)
-            throw new Exception("Item cannot be null!");
+            throw new CartItemNotFoundException("Could not found an item with given ID!");
 
         await _cartRepository.UpdateQuantityAsync(userId, cart.Data, item, updateCartDto.Quantity);
         
@@ -58,7 +59,7 @@ public class CartService : ICartService
         var item = cart.Data.CartItems.FirstOrDefault(c => c.Id == deleteFromCartDto.ItemId);
 
         if (item == null)
-            throw new Exception("Item cannot be null!");
+            throw new CartItemNotFoundException("Could not found an item with given ID!");
         
         await _cartRepository.DeleteItemAsync(userId, cart.Data, item);
         

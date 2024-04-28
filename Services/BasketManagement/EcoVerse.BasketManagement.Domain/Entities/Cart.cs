@@ -17,9 +17,5 @@ public class Cart : AuditableBaseEntity
         CartItems = new List<CartItem>();
         
         CreatedDate = DateTime.Now;
-
-        CreatedBy = Guid.Parse(UserId);
-        
-        
     }
 }

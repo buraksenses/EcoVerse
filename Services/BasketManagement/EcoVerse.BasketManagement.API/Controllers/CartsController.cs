@@ -32,7 +32,7 @@ public class CartsController : CustomBaseController
     [HttpPut("items/{itemId}")]
     public async Task<IActionResult> UpdateQuantityAsync(Guid itemId, UpdateCartDto updateCartDto)
         => CreateActionResultInstance(
-            await _cartService.UpdateQuantityAsync(_sharedIdentityService.GetUserId, updateCartDto));
+            await _cartService.UpdateQuantityAsync(_sharedIdentityService.GetUserId, itemId, updateCartDto));
 
     [HttpDelete("items")]
     public async Task<IActionResult> DeleteItemAsync(DeleteFromCartDto deleteFromCartDto)

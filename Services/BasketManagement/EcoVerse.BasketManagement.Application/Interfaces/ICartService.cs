@@ -10,7 +10,7 @@ public interface ICartService
 
     Task<Response<Cart>> GetByUserId(string userId);
 
-    Task<Response<NoContent>> UpdateQuantityAsync(string userId, UpdateCartDto updateCartDto);
+    Task<Response<NoContent>> UpdateQuantityAsync(string userId, Guid itemId, UpdateCartDto updateCartDto);
 
     Task<Response<NoContent>> DeleteItemAsync(string userId, DeleteFromCartDto deleteFromCartDto);
 

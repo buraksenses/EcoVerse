@@ -5,6 +5,7 @@ using EcoVerse.ProductManagement.Domain.Entities;
 using EcoVerse.ProductManagement.Domain.Exceptions;
 using EcoVerse.ProductManagement.Domain.Interfaces;
 using EcoVerse.Shared.DTOs;
+using EcoVerse.Shared.Exceptions;
 
 namespace EcoVerse.ProductManagement.Application.Services;
 
