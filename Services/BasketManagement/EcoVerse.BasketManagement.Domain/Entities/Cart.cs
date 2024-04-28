@@ -8,7 +8,12 @@ public class Cart : AuditableBaseEntity
 
     public string UserId { get; set; }
 
-    public virtual ICollection<CartItem> CartItems { get; set; }
+    public List<CartItem> CartItems { get; set; }
 
     public decimal TotalPrice => CartItems.Sum(x => x.Price * x.Quantity);
+
+    public Cart()
+    {
+        CartItems = new List<CartItem>();
+    }
 }

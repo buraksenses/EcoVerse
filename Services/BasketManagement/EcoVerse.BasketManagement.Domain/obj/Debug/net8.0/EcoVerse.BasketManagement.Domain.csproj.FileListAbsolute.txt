@@ -1,0 +1,16 @@
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\bin\Debug\net8.0\EcoVerse.BasketManagement.Domain.deps.json
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\bin\Debug\net8.0\EcoVerse.BasketManagement.Domain.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\bin\Debug\net8.0\EcoVerse.BasketManagement.Domain.pdb
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\bin\Debug\net8.0\EcoVerse.Shared.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\bin\Debug\net8.0\EcoVerse.Shared.pdb
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\obj\Debug\net8.0\EcoVerse.BasketManagement.Domain.csproj.AssemblyReference.cache
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\obj\Debug\net8.0\EcoVerse.BasketManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\obj\Debug\net8.0\EcoVerse.BasketManagement.Domain.AssemblyInfoInputs.cache
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\obj\Debug\net8.0\EcoVerse.BasketManagement.Domain.AssemblyInfo.cs
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\obj\Debug\net8.0\EcoVerse.BasketManagement.Domain.csproj.CoreCompileInputs.cache
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\obj\Debug\net8.0\EcoVerse.BasketManagement.Domain.sourcelink.json
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\obj\Debug\net8.0\EcoVerse.CB8A2A11.Up2Date
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\obj\Debug\net8.0\EcoVerse.BasketManagement.Domain.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\obj\Debug\net8.0\refint\EcoVerse.BasketManagement.Domain.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\obj\Debug\net8.0\EcoVerse.BasketManagement.Domain.pdb
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\obj\Debug\net8.0\ref\EcoVerse.BasketManagement.Domain.dll

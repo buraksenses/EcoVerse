@@ -180,6 +180,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "Z:\\.NET Projects\\EcoVerse\\Services\\BasketManagement\\EcoVerse.BasketManagement.Domain\\EcoVerse.BasketManagement.Domain.csproj": {
+                "projectPath": "Z:\\.NET Projects\\EcoVerse\\Services\\BasketManagement\\EcoVerse.BasketManagement.Domain\\EcoVerse.BasketManagement.Domain.csproj"
+              },
               "Z:\\.NET Projects\\EcoVerse\\Services\\BasketManagement\\EcoVerse.BasketManagement.Infrastructure\\EcoVerse.BasketManagement.Infrastructure.csproj": {
                 "projectPath": "Z:\\.NET Projects\\EcoVerse\\Services\\BasketManagement\\EcoVerse.BasketManagement.Infrastructure\\EcoVerse.BasketManagement.Infrastructure.csproj"
               }
@@ -324,6 +327,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.7.33, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -7,7 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\EcoVerse.BasketManagement.Domain\EcoVerse.BasketManagement.Domain.csproj" />
       <ProjectReference Include="..\EcoVerse.BasketManagement.Infrastructure\EcoVerse.BasketManagement.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Interfaces\" />
     </ItemGroup>
 
 </Project>
