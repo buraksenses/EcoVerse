@@ -1,9 +1,8 @@
-﻿using EcoVerse.BasketManagement.Application.Interfaces;
-using EcoVerse.ProductManagement.Application.Sagas;
+﻿using EcoVerse.BasketManagement.Application.Messaging.Sagas.States;
 using EcoVerse.Shared.Messages;
 using MassTransit;
 
-namespace EcoVerse.BasketManagement.Application.Sagas;
+namespace EcoVerse.BasketManagement.Application.Messaging.Sagas;
 
 public class AddToCartSaga : MassTransitStateMachine<AddToCartSagaState>
 {

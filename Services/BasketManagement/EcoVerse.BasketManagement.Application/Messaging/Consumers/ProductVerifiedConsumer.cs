@@ -3,7 +3,7 @@ using EcoVerse.BasketManagement.Application.Interfaces;
 using EcoVerse.Shared.Messages;
 using MassTransit;
 
-namespace EcoVerse.BasketManagement.Application.Consumers;
+namespace EcoVerse.BasketManagement.Application.Messaging.Consumers;
 
 public class ProductVerifiedConsumer : IConsumer<ProductVerified>
 {

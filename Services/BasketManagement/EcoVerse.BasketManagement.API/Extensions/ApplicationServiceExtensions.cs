@@ -1,14 +1,14 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
-using EcoVerse.BasketManagement.Application.Consumers;
 using EcoVerse.BasketManagement.Application.Interfaces;
-using EcoVerse.BasketManagement.Application.Sagas;
+using EcoVerse.BasketManagement.Application.Messaging.Consumers;
+using EcoVerse.BasketManagement.Application.Messaging.Sagas;
+using EcoVerse.BasketManagement.Application.Messaging.Sagas.States;
 using EcoVerse.BasketManagement.Application.Services;
 using EcoVerse.BasketManagement.Application.Validations;
 using EcoVerse.BasketManagement.Domain.Interfaces;
 using EcoVerse.BasketManagement.Infrastructure.Repositories;
 using EcoVerse.BasketManagement.Infrastructure.Services;
 using EcoVerse.BasketManagement.Infrastructure.Settings;
-using EcoVerse.ProductManagement.Application.Sagas;
 using EcoVerse.Shared.Messages;
 using EcoVerse.Shared.Services;
 using FluentValidation.AspNetCore;

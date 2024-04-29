@@ -1,6 +1,6 @@
 ﻿using MassTransit;
 
-namespace EcoVerse.ProductManagement.Application.Sagas;
+namespace EcoVerse.BasketManagement.Application.Messaging.Sagas.States;
 
 public class AddToCartSagaState : SagaStateMachineInstance
 {
