@@ -65,3 +65,7 @@ Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.AP
 Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\bin\Debug\net8.0\FluentValidation.dll
 Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\bin\Debug\net8.0\MassTransit.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\bin\Debug\net8.0\MassTransit.Abstractions.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
+Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.API\bin\Debug\net8.0\RabbitMQ.Client.dll

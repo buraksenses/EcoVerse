@@ -8,13 +8,13 @@ public class AddToCartValidator : AbstractValidator<AddToCartDto>
 {
     public AddToCartValidator()
     {
-        RuleFor(x => x.CartItem.Price)
+        RuleFor(x => x.Price)
             .GreaterThan(0m).WithMessage("Price must be greater than zero!");
 
-        RuleFor(x => x.CartItem.Quantity)
+        RuleFor(x => x.Quantity)
             .GreaterThan(0).WithMessage("Quantity must be greater than zero!");
         
-        RuleFor(x => x.CartItem.ProductId)
+        RuleFor(x => x.ProductId)
             .Must(Utils.BeAValidGuid).WithMessage("Invalid ID.");
     }
 }

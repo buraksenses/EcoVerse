@@ -1,4 +1,5 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
+using EcoVerse.BasketManagement.Application.Consumers;
 using EcoVerse.BasketManagement.Application.Interfaces;
 using EcoVerse.BasketManagement.Application.Services;
 using EcoVerse.BasketManagement.Application.Validations;
@@ -8,6 +9,7 @@ using EcoVerse.BasketManagement.Infrastructure.Services;
 using EcoVerse.BasketManagement.Infrastructure.Settings;
 using EcoVerse.Shared.Services;
 using FluentValidation.AspNetCore;
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -19,6 +21,25 @@ public static class ApplicationServiceExtensions
 {
     public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
     {
+        services.AddMassTransit(x =>
+        {
+            x.AddConsumer<ProductResponseConsumer>();
+            
+            x.UsingRabbitMq((context, cfg) =>
+            {
+                cfg.Host(config["RabbitMQUrl"], "/", host =>
+                {
+                    host.Username("guest");
+                    host.Password("guest");
+                });
+                
+                cfg.ReceiveEndpoint("add-to-cart-service", e =>
+                {
+                    e.ConfigureConsumer<ProductResponseConsumer>(context);
+                });
+            });
+        });
+        
         var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
         JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
         services.AddControllers(opt =>

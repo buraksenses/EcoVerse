@@ -1,10 +1,12 @@
-﻿using EcoVerse.ProductManagement.Application.Interfaces;
+﻿using EcoVerse.ProductManagement.Application.Consumers;
+using EcoVerse.ProductManagement.Application.Interfaces;
 using EcoVerse.ProductManagement.Application.Services;
 using EcoVerse.ProductManagement.Application.Validations.Product;
 using EcoVerse.ProductManagement.Domain.Interfaces;
 using EcoVerse.ProductManagement.Infrastructure.Configurations;
 using EcoVerse.ProductManagement.Infrastructure.Data.Repositories;
 using FluentValidation.AspNetCore;
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc.Authorization;
 
@@ -14,6 +16,25 @@ public static class ApplicationServiceExtensions
 {
      public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
     {
+        services.AddMassTransit(x =>
+        {
+            x.AddConsumer<AddItemToCartConsumer>();
+            
+            x.UsingRabbitMq((context, cfg) =>
+            {
+                cfg.Host(config["RabbitMQUrl"], "/", host =>
+                {
+                    host.Username("guest");
+                    host.Password("guest");
+                });
+                
+                cfg.ReceiveEndpoint("add-to-cart-response-service", e =>
+                {
+                    e.ConfigureConsumer<AddItemToCartConsumer>(context);
+                });
+            });
+        });
+
         services.AddControllers(opt =>
         {
             opt.Filters.Add(new AuthorizeFilter());

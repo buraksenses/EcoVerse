@@ -155,3 +155,7 @@ Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\obj\Debug\net8.0\EcoVer
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\obj\Debug\net8.0\EcoVerse.ProductManagement.API.genruntimeconfig.cache
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\obj\Debug\net8.0\ref\EcoVerse.ProductManagement.API.dll
 Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net8.0\MassTransit.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net8.0\MassTransit.Abstractions.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
+Z:\.NET Projects\EcoVerse\EcoVerse.ProductManagement.API\bin\Debug\net8.0\RabbitMQ.Client.dll

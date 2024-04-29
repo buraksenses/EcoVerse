@@ -26,7 +26,13 @@ public class CartService : ICartService
         cart.LastModifiedBy = Guid.Parse(userId);
         cart.LastModifiedDate = DateTime.Now;
 
-        await _cartRepository.AddItemAsync(userId, cart, addToCartDto.CartItem);
+        await _cartRepository.AddItemAsync(userId, cart, new CartItem
+        {
+            Id = Guid.NewGuid(),
+            Price = addToCartDto.Price,
+            ProductId = addToCartDto.ProductId,
+            Quantity = addToCartDto.Quantity
+        });
 
         return Response<bool>.Success(201);
     }
