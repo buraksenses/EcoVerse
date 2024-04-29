@@ -1,12 +1,15 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using EcoVerse.BasketManagement.Application.Consumers;
 using EcoVerse.BasketManagement.Application.Interfaces;
+using EcoVerse.BasketManagement.Application.Sagas;
 using EcoVerse.BasketManagement.Application.Services;
 using EcoVerse.BasketManagement.Application.Validations;
 using EcoVerse.BasketManagement.Domain.Interfaces;
 using EcoVerse.BasketManagement.Infrastructure.Repositories;
 using EcoVerse.BasketManagement.Infrastructure.Services;
 using EcoVerse.BasketManagement.Infrastructure.Settings;
+using EcoVerse.ProductManagement.Application.Sagas;
+using EcoVerse.Shared.Messages;
 using EcoVerse.Shared.Services;
 using FluentValidation.AspNetCore;
 using MassTransit;
@@ -23,8 +26,11 @@ public static class ApplicationServiceExtensions
     {
         services.AddMassTransit(x =>
         {
-            x.AddConsumer<ProductResponseConsumer>();
+            x.AddConsumer<ProductVerifiedConsumer>();
             
+            x.AddSagaStateMachine<AddToCartSaga, AddToCartSagaState>()
+                .InMemoryRepository();
+
             x.UsingRabbitMq((context, cfg) =>
             {
                 cfg.Host(config["RabbitMQUrl"], "/", host =>
@@ -32,11 +38,14 @@ public static class ApplicationServiceExtensions
                     host.Username("guest");
                     host.Password("guest");
                 });
-                
+
                 cfg.ReceiveEndpoint("add-to-cart-service", e =>
                 {
-                    e.ConfigureConsumer<ProductResponseConsumer>(context);
+                    e.ConfigureConsumer<ProductVerifiedConsumer>(context);
                 });
+                
+                cfg.ConfigureEndpoints(context);
+               
             });
         });
         

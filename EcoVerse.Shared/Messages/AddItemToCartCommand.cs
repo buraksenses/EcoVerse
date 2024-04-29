@@ -2,6 +2,8 @@
 
 public class AddItemToCartCommand
 {
+    public Guid CorrelationId { get; set; }
+    
     public string UserId { get; set; }
     
     public Guid ProductId { get; set; }
