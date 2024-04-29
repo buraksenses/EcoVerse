@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoVerse.ProductManagement.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a40f4674b7ffb4e9129b746d055a6e64fa01701")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1140421bf043529252b7afb571d4da6d9438b52")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoVerse.ProductManagement.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoVerse.ProductManagement.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

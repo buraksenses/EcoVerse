@@ -13,4 +13,11 @@ public class ProductDbContext : DbContext
     public DbSet<Product> Products { get; set; }
 
     public DbSet<Category> Categories { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Product>().Property(x => x.Price).HasColumnType("decimal(18,2)");
+        
+        base.OnModelCreating(modelBuilder);
+    }
 }

@@ -1,6 +1,5 @@
 ﻿using EcoVerse.BasketManagement.Application.DTOs;
 using EcoVerse.BasketManagement.Application.Interfaces;
-using EcoVerse.BasketManagement.Domain.Entities;
 using EcoVerse.Shared.ControllerBases;
 using EcoVerse.Shared.DTOs;
 using EcoVerse.Shared.Messages;
