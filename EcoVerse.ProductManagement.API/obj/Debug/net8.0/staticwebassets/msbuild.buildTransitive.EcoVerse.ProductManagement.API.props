@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\EcoVerse.ProductManagement.API.props" />
-</Project>

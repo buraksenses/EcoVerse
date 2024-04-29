@@ -1,0 +1,16 @@
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\bin\Debug\net8.0\EcoVerse.ProductManagement.Domain.deps.json
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\bin\Debug\net8.0\EcoVerse.ProductManagement.Domain.dll
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\bin\Debug\net8.0\EcoVerse.ProductManagement.Domain.pdb
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\bin\Debug\net8.0\EcoVerse.Shared.dll
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\bin\Debug\net8.0\EcoVerse.Shared.pdb
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\obj\Debug\net8.0\EcoVerse.ProductManagement.Domain.csproj.AssemblyReference.cache
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\obj\Debug\net8.0\EcoVerse.ProductManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\obj\Debug\net8.0\EcoVerse.ProductManagement.Domain.AssemblyInfoInputs.cache
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\obj\Debug\net8.0\EcoVerse.ProductManagement.Domain.AssemblyInfo.cs
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\obj\Debug\net8.0\EcoVerse.ProductManagement.Domain.csproj.CoreCompileInputs.cache
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\obj\Debug\net8.0\EcoVerse.ProductManagement.Domain.sourcelink.json
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\obj\Debug\net8.0\EcoVerse.5F693A4A.Up2Date
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\obj\Debug\net8.0\EcoVerse.ProductManagement.Domain.dll
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\obj\Debug\net8.0\refint\EcoVerse.ProductManagement.Domain.dll
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\obj\Debug\net8.0\EcoVerse.ProductManagement.Domain.pdb
+Z:\.NET Projects\EcoVerse\Services\ProductManagement\EcoVerse.ProductManagement.Domain\obj\Debug\net8.0\ref\EcoVerse.ProductManagement.Domain.dll
