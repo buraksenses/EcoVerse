@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj": {}
+    "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj": {}
   },
   "projects": {
-    "Z:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj": {
+    "C:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj",
+        "projectUniqueName": "C:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj",
         "projectName": "EcoVerse.Shared",
-        "projectPath": "Z:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj",
-        "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
-        "outputPath": "Z:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\obj\\",
+        "projectPath": "C:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj",
+        "packagesPath": "C:\\Users\\ecebs\\.nuget\\packages\\",
+        "outputPath": "C:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ecebs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,6 +65,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -72,30 +88,32 @@
         }
       }
     },
-    "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj": {
+    "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj",
+        "projectUniqueName": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj",
         "projectName": "EcoVerse.ProductManagement.Domain",
-        "projectPath": "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
-        "outputPath": "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\obj\\",
+        "projectPath": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\ecebs\\.nuget\\packages\\",
+        "outputPath": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ecebs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "Z:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj": {
-                "projectPath": "Z:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj"
+              "C:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj": {
+                "projectPath": "C:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj"
               }
             }
           }
@@ -134,30 +152,32 @@
         }
       }
     },
-    "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj": {
+    "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj",
+        "projectUniqueName": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj",
         "projectName": "EcoVerse.ProductManagement.Infrastructure",
-        "projectPath": "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
-        "outputPath": "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\obj\\",
+        "projectPath": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ecebs\\.nuget\\packages\\",
+        "outputPath": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ecebs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj": {
-                "projectPath": "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj"
+              "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj": {
+                "projectPath": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj"
               }
             }
           }

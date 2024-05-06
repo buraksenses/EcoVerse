@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EcoVerse.BasketManagement.Domain
-build_property.ProjectDir = Z:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\
+build_property.ProjectDir = C:\.NET Projects\EcoVerse\Services\BasketManagement\EcoVerse.BasketManagement.Domain\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

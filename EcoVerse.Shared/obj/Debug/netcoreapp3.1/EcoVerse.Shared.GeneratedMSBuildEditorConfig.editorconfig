@@ -1,5 +1,5 @@
 is_global = true
 build_property.RootNamespace = EcoVerse.Shared
-build_property.ProjectDir = Z:\.NET Projects\EcoVerse\EcoVerse.Shared\
+build_property.ProjectDir = C:\.NET Projects\EcoVerse\EcoVerse.Shared\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

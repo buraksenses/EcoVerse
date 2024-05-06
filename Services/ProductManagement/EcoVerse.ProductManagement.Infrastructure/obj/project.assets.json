@@ -10232,32 +10232,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Burak\\.nuget\\packages\\": {}
+    "C:\\Users\\ecebs\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj",
+      "projectUniqueName": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj",
       "projectName": "EcoVerse.ProductManagement.Infrastructure",
-      "projectPath": "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
-      "outputPath": "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\obj\\",
+      "projectPath": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\EcoVerse.ProductManagement.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\ecebs\\.nuget\\packages\\",
+      "outputPath": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ecebs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj": {
-              "projectPath": "Z:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj"
+            "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj": {
+              "projectPath": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.Domain\\EcoVerse.ProductManagement.Domain.csproj"
             }
           }
         }

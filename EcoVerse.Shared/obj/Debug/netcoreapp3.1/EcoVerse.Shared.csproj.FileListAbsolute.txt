@@ -9,3 +9,14 @@ Z:\.NET Projects\EcoVerse\EcoVerse.Shared\bin\Debug\netcoreapp3.1\EcoVerse.Share
 Z:\.NET Projects\EcoVerse\EcoVerse.Shared\bin\Debug\netcoreapp3.1\EcoVerse.Shared.pdb
 Z:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\netcoreapp3.1\EcoVerse.Shared.dll
 Z:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\netcoreapp3.1\EcoVerse.Shared.pdb
+C:\.NET Projects\EcoVerse\EcoVerse.Shared\bin\Debug\netcoreapp3.1\EcoVerse.Shared.deps.json
+C:\.NET Projects\EcoVerse\EcoVerse.Shared\bin\Debug\netcoreapp3.1\EcoVerse.Shared.dll
+C:\.NET Projects\EcoVerse\EcoVerse.Shared\bin\Debug\netcoreapp3.1\EcoVerse.Shared.pdb
+C:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\netcoreapp3.1\EcoVerse.Shared.csproj.AssemblyReference.cache
+C:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\netcoreapp3.1\EcoVerse.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\netcoreapp3.1\EcoVerse.Shared.AssemblyInfoInputs.cache
+C:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\netcoreapp3.1\EcoVerse.Shared.AssemblyInfo.cs
+C:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\netcoreapp3.1\EcoVerse.Shared.csproj.CoreCompileInputs.cache
+C:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\netcoreapp3.1\EcoVerse.Shared.sourcelink.json
+C:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\netcoreapp3.1\EcoVerse.Shared.dll
+C:\.NET Projects\EcoVerse\EcoVerse.Shared\obj\Debug\netcoreapp3.1\EcoVerse.Shared.pdb
