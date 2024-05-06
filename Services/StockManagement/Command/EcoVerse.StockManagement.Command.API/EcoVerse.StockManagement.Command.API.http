@@ -1,0 +1,6 @@
+@EcoVerse.StockManagement.Command.API_HostAddress = http://localhost:5042
+
+GET {{EcoVerse.StockManagement.Command.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
