@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "31Drq+6T78OP4YQnImxJRgu2yfhqt3mCbTF7dnW3Ekp61AF4Qciibs/61xcWMEiUokhS1wwj4xFze+CHNgc5Aw==",
+  "dgSpecHash": "0/OjhdE2WCNY2BcYfpz1RQn8pAD0Na0j4acLPujR3E6xOE3LRk9uazUGo8rD8kpfnfK0WMtDXv+NF9NK8sbSnw==",
   "success": true,
   "projectFilePath": "C:\\.NET Projects\\EcoVerse\\Services\\BasketManagement\\EcoVerse.BasketManagement.API\\EcoVerse.BasketManagement.API.csproj",
   "expectedPackageFiles": [

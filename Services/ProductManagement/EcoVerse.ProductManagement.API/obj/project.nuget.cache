@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hqZC9QtEQc9sK27hx6cVDDAwzL/SDycnsasq377tmQ4CJF4mBVvSntYnBYtHVM86s1ly2+K2Q6XWbkvzCBkrIg==",
+  "dgSpecHash": "n9XfRtLwBOVko1iqd89bR4KYoTB4vRPre8fU60FkhXPx9Zi6uRQLGAGXDE0WpHQRi0FvcHNL39vNcx5P4YW2zg==",
   "success": true,
   "projectFilePath": "C:\\.NET Projects\\EcoVerse\\Services\\ProductManagement\\EcoVerse.ProductManagement.API\\EcoVerse.ProductManagement.API.csproj",
   "expectedPackageFiles": [

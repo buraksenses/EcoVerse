@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4XfjPRwCxLtS+Uw+oL3ITxZuiKQp+LUzRm6KfupOMizfEOfB/7ZRbvCmdhUqyA5F9gqr2ysV8YiQl4QXQtr/7A==",
+  "dgSpecHash": "jYAp3jA64dR9URapkPozBLlTz869d/JjUH74t4nQ/HIidpVIf03jY/0xhWQSNIxjlSY4p9hb3nm7XfwqRqvqVA==",
   "success": true,
   "projectFilePath": "C:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj",
   "expectedPackageFiles": [
@@ -165,10 +165,7 @@
     "C:\\Users\\ecebs\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\ecebs\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\ecebs\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\ecebs\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\ecebs\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "C:\\Users\\ecebs\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "H4x7aWCjVrVCHl2XbY3f1oPoWpzmqTdpEwUYh7hVzEnTSor5vteLbpLKnAjTqyRgUUcBF2elVgXQhb258MJEeg==",
+  "dgSpecHash": "g3BUn8vzGMoAe84bUaaJT2GNpjFenZMaZUp4422y9tGK/ssAkqPeGcT5xhheMht6Tp3d+y4Sg6CIFlMyxY073g==",
   "success": true,
   "projectFilePath": "C:\\.NET Projects\\EcoVerse\\IdentityServer\\EcoVerse.IdentityServer\\EcoVerse.IdentityServer.csproj",
   "expectedPackageFiles": [
@@ -235,11 +235,7 @@
     "C:\\Users\\ecebs\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\ecebs\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\ecebs\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\ecebs\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\ecebs\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\ecebs\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+    "C:\\Users\\ecebs\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
