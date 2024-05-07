@@ -1,0 +1,16 @@
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\bin\Debug\net8.0\EcoVerse.StockManagement.Common.deps.json
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\bin\Debug\net8.0\EcoVerse.StockManagement.Common.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\bin\Debug\net8.0\EcoVerse.StockManagement.Common.pdb
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\bin\Debug\net8.0\CQRS.Core.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\bin\Debug\net8.0\CQRS.Core.pdb
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\obj\Debug\net8.0\EcoVerse.StockManagement.Common.csproj.AssemblyReference.cache
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\obj\Debug\net8.0\EcoVerse.StockManagement.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\obj\Debug\net8.0\EcoVerse.StockManagement.Common.AssemblyInfoInputs.cache
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\obj\Debug\net8.0\EcoVerse.StockManagement.Common.AssemblyInfo.cs
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\obj\Debug\net8.0\EcoVerse.StockManagement.Common.csproj.CoreCompileInputs.cache
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\obj\Debug\net8.0\EcoVerse.StockManagement.Common.sourcelink.json
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\obj\Debug\net8.0\EcoVerse.01FA77DF.Up2Date
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\obj\Debug\net8.0\EcoVerse.StockManagement.Common.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\obj\Debug\net8.0\refint\EcoVerse.StockManagement.Common.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\obj\Debug\net8.0\EcoVerse.StockManagement.Common.pdb
+C:\.NET Projects\EcoVerse\Services\StockManagement\EcoVerse.StockManagement.Common\obj\Debug\net8.0\ref\EcoVerse.StockManagement.Common.dll

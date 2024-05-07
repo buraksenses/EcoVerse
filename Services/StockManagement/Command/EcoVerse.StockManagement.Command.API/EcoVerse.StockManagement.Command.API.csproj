@@ -13,6 +13,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\..\EcoVerse.Shared\EcoVerse.Shared.csproj" />
+      <ProjectReference Include="..\EcoVerse.StockManagement.Command.Application\EcoVerse.StockManagement.Command.Application.csproj" />
     </ItemGroup>
 
 </Project>

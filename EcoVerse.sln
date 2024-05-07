@@ -56,6 +56,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Core", "Services\Stock
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoVerse.StockManagement.Common", "Services\StockManagement\EcoVerse.StockManagement.Common\EcoVerse.StockManagement.Common.csproj", "{BE7384A9-D149-4124-9883-63D4CF357400}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoVerse.StockManagement.Command.Application", "Services\StockManagement\Command\EcoVerse.StockManagement.Command.Application\EcoVerse.StockManagement.Command.Application.csproj", "{1F7A2E0B-A946-4E18-B971-5DBB17F3B17E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,7 @@ Global
 		{DB84CF8F-FCF7-461E-85DC-7A761D15642B} = {2855B83C-510F-4CAA-B4A2-217FFD9DE78F}
 		{B08DEDEF-78B0-4AFB-A8A4-63816F879A88} = {3418F777-2E8F-43BE-84EE-7A519A9A394A}
 		{BE7384A9-D149-4124-9883-63D4CF357400} = {3418F777-2E8F-43BE-84EE-7A519A9A394A}
+		{1F7A2E0B-A946-4E18-B971-5DBB17F3B17E} = {0418F1F6-667C-475E-A24C-AB2B2E528787}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3EED8E59-F6E4-4756-B8C5-6E27EBA1203D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -169,5 +172,9 @@ Global
 		{BE7384A9-D149-4124-9883-63D4CF357400}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE7384A9-D149-4124-9883-63D4CF357400}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE7384A9-D149-4124-9883-63D4CF357400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F7A2E0B-A946-4E18-B971-5DBB17F3B17E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F7A2E0B-A946-4E18-B971-5DBB17F3B17E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F7A2E0B-A946-4E18-B971-5DBB17F3B17E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F7A2E0B-A946-4E18-B971-5DBB17F3B17E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

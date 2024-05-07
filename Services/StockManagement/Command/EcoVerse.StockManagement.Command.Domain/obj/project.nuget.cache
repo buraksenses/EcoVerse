@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6Qb4FkIq9dj2o3/8b9XtzpiWmLP2qLodigPaX6RNFKWOZsWyAu+1KboqXvbhGZXnCzg9y+hJ9GMIQBUe5twyjg==",
+  "dgSpecHash": "eR5r2qprbJTisqElNR6QadSbfYN9xLysv2sN5vpZ0VSpq8zPBOgbfgKeIb7MYS73g5dggYTEm8g6QMlf+qlHhQ==",
   "success": true,
   "projectFilePath": "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\Command\\EcoVerse.StockManagement.Command.Domain\\EcoVerse.StockManagement.Command.Domain.csproj",
   "expectedPackageFiles": [

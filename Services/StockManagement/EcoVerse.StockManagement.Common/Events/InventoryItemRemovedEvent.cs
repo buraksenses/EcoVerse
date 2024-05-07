@@ -4,7 +4,9 @@ namespace EcoVerse.StockManagement.Common.Events;
 
 public class InventoryItemRemovedEvent : BaseEvent
 {
-    protected InventoryItemRemovedEvent(string type) : base(type)
+    public Guid ItemId { get; set; }
+    
+    public InventoryItemRemovedEvent() : base(nameof(InventoryItemRemovedEvent))
     {
     }
 }

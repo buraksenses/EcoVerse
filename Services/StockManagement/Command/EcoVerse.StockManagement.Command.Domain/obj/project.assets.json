@@ -305,6 +305,19 @@
         "runtime": {
           "bin/placeholder/CQRS.Core.dll": {}
         }
+      },
+      "EcoVerse.StockManagement.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CQRS.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EcoVerse.StockManagement.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoVerse.StockManagement.Common.dll": {}
+        }
       }
     }
   },
@@ -791,11 +804,17 @@
       "type": "project",
       "path": "../../CQRS.Core/CQRS.Core.csproj",
       "msbuildProject": "../../CQRS.Core/CQRS.Core.csproj"
+    },
+    "EcoVerse.StockManagement.Common/1.0.0": {
+      "type": "project",
+      "path": "../../EcoVerse.StockManagement.Common/EcoVerse.StockManagement.Common.csproj",
+      "msbuildProject": "../../EcoVerse.StockManagement.Common/EcoVerse.StockManagement.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "CQRS.Core >= 1.0.0"
+      "CQRS.Core >= 1.0.0",
+      "EcoVerse.StockManagement.Common >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -827,6 +846,9 @@
           "projectReferences": {
             "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\CQRS.Core\\CQRS.Core.csproj": {
               "projectPath": "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\CQRS.Core\\CQRS.Core.csproj"
+            },
+            "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\EcoVerse.StockManagement.Common\\EcoVerse.StockManagement.Common.csproj": {
+              "projectPath": "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\EcoVerse.StockManagement.Common\\EcoVerse.StockManagement.Common.csproj"
             }
           }
         }

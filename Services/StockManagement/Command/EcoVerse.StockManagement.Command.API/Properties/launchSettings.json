@@ -12,11 +12,12 @@
     "http": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:5042",
+      "applicationUrl": "http://localhost:5040",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "KAFKA_TOPIC": "StockManagementEvents"
       }
     },
     "https": {

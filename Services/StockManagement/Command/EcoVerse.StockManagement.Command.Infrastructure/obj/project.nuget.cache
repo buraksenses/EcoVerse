@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O0IbhzopKUXDR1OOmgN2e7DIc6V9A4a3r9wmCGWfplE+HWkHgTeSwEzioflQfumUgGCuQgv8DSCl9LpXL10FGQ==",
+  "dgSpecHash": "n1UzBayJu1FTnMOwnClAA9yM8NWo2OjZBrB3kvC/GUTQnAdAjlM2PyJPtNxuU6v6CBYWPUQPsIYDmBACViiVrQ==",
   "success": true,
   "projectFilePath": "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\Command\\EcoVerse.StockManagement.Command.Infrastructure\\EcoVerse.StockManagement.Command.Infrastructure.csproj",
   "expectedPackageFiles": [

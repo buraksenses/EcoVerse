@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\CQRS.Core\CQRS.Core.csproj" />
+      <ProjectReference Include="..\..\EcoVerse.StockManagement.Common\EcoVerse.StockManagement.Common.csproj" />
     </ItemGroup>
 
 </Project>

@@ -3174,13 +3174,27 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "CQRS.Core": "1.0.0"
+          "CQRS.Core": "1.0.0",
+          "EcoVerse.StockManagement.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/EcoVerse.StockManagement.Command.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/EcoVerse.StockManagement.Command.Domain.dll": {}
+        }
+      },
+      "EcoVerse.StockManagement.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CQRS.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EcoVerse.StockManagement.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoVerse.StockManagement.Common.dll": {}
         }
       }
     }
@@ -8725,6 +8739,11 @@
       "type": "project",
       "path": "../EcoVerse.StockManagement.Command.Domain/EcoVerse.StockManagement.Command.Domain.csproj",
       "msbuildProject": "../EcoVerse.StockManagement.Command.Domain/EcoVerse.StockManagement.Command.Domain.csproj"
+    },
+    "EcoVerse.StockManagement.Common/1.0.0": {
+      "type": "project",
+      "path": "../../EcoVerse.StockManagement.Common/EcoVerse.StockManagement.Common.csproj",
+      "msbuildProject": "../../EcoVerse.StockManagement.Common/EcoVerse.StockManagement.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
