@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\EcoVerse.StockManagement.Query.API.props" />
+</Project>

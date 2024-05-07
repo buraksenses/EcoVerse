@@ -6,4 +6,16 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Confluent.Kafka" Version="2.4.0-RC2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\CQRS.Core\CQRS.Core.csproj" />
+      <ProjectReference Include="..\..\EcoVerse.StockManagement.Common\EcoVerse.StockManagement.Common.csproj" />
+      <ProjectReference Include="..\EcoVerse.StockManagement.Query.Domain\EcoVerse.StockManagement.Query.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
