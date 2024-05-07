@@ -59,6 +59,38 @@
           }
         }
       },
+      "FluentValidation/11.9.1": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.9.1.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.3.0": {
+        "dependencies": {
+          "FluentValidation": "11.9.1",
+          "FluentValidation.DependencyInjectionExtensions": "11.5.1"
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.3.0.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.5.1": {
+        "dependencies": {
+          "FluentValidation": "11.9.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.5.1.0"
+          }
+        }
+      },
       "librdkafka.redist/2.3.0": {
         "runtimeTargets": {
           "runtimes/linux-arm64/native/librdkafka.so": {
@@ -1717,6 +1749,8 @@
           "EcoVerse.Shared": "1.0.0",
           "EcoVerse.StockManagement.Command.Domain": "1.0.0",
           "EcoVerse.StockManagement.Command.Infrastructure": "1.0.0",
+          "FluentValidation": "11.9.1",
+          "FluentValidation.AspNetCore": "11.3.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0"
         },
         "runtime": {
@@ -1787,6 +1821,27 @@
       "sha512": "sha512-4H/f2uYJOZ+YObZjpY9ABrKZI+JNw3uizp6oMzTXwDw6F+2qIPhpRl/1t68O/6e98+vqNiYGu+lswmwdYUy3gg==",
       "path": "dnsclient/1.6.1",
       "hashPath": "dnsclient.1.6.1.nupkg.sha512"
+    },
+    "FluentValidation/11.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C+PqISSMdlOZZJx0Hx25atW32tv4vbpsaiQB+PLjK+ZGLzOFuHl1fUJ3Lny77mIZ31ZtYtNG0JgUjxa3wwLsWg==",
+      "path": "fluentvalidation/11.9.1",
+      "hashPath": "fluentvalidation.11.9.1.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/11.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jtFVgKnDFySyBlPS8bZbTKEEwJZnn11rXXJ2SQnjDhZ56rQqybBg9Joq4crRLz3y0QR8WoOq4iE4piV81w/Djg==",
+      "path": "fluentvalidation.aspnetcore/11.3.0",
+      "hashPath": "fluentvalidation.aspnetcore.11.3.0.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iWM0LS1MDYX06pcjMEQKqHirl2zkjHlNV23mEJSoR1IZI7KQmTa0RcTtGEJpj5+iHvBCfrzP2mYKM4FtRKVb+A==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.5.1",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512"
     },
     "librdkafka.redist/2.3.0": {
       "type": "package",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wbVp55Y7hNmoFkiYLXUNxCkwXUHjSmlzGCpNiYaYbisbrVi7IV+1Ktoy6o7FMWkhN/a4R/kAIF6ZAEqo3+/0/A==",
+  "dgSpecHash": "2M7zbAoK42YHbpToVoplCvaUZNsGf9YUkso/f6yv441zD7Jq69C3J9zg976ACvL+TC1SSrc+EyGdOCPSEbSs0w==",
   "success": true,
   "projectFilePath": "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\Command\\EcoVerse.StockManagement.Command.API\\EcoVerse.StockManagement.Command.API.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\ecebs\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\confluent.kafka\\2.3.0\\confluent.kafka.2.3.0.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\ecebs\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
+    "C:\\Users\\ecebs\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\ecebs\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\librdkafka.redist\\2.3.0\\librdkafka.redist.2.3.0.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

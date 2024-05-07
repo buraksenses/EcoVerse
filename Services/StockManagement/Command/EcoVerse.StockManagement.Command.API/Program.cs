@@ -5,12 +5,15 @@ using CQRS.Core.Infrastructure;
 using CQRS.Core.Producers;
 using EcoVerse.Shared.Exceptions;
 using EcoVerse.StockManagement.Command.Application.Handlers;
+using EcoVerse.StockManagement.Command.Application.Validations;
 using EcoVerse.StockManagement.Command.Domain.Aggregates;
 using EcoVerse.StockManagement.Command.Infrastructure.Config;
 using EcoVerse.StockManagement.Command.Infrastructure.Handlers;
 using EcoVerse.StockManagement.Command.Infrastructure.Producers;
 using EcoVerse.StockManagement.Command.Infrastructure.Repositories;
 using EcoVerse.StockManagement.Command.Infrastructure.Stores;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,6 +35,9 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
+builder.Services.AddValidatorsFromAssemblyContaining<AddInventoryItemValidator>();
 
 var app = builder.Build();
 

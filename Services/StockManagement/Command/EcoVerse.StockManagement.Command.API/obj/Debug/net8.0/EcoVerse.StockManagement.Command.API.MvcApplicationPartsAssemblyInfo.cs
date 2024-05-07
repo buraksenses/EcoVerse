@@ -13,6 +13,7 @@ using System.Reflection;
 [assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute("EcoVerse.Shared")]
 [assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute("EcoVerse.StockManagement.Command.Application")]
 [assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute("EcoVerse.StockManagement.Command.Infrastructure")]
+[assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute("FluentValidation.AspNetCore")]
 [assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute("Microsoft.AspNetCore.OpenApi")]
 [assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute("Swashbuckle.AspNetCore.SwaggerGen")]
 

@@ -98,3 +98,6 @@ C:\.NET Projects\EcoVerse\Services\StockManagement\Command\EcoVerse.StockManagem
 C:\.NET Projects\EcoVerse\Services\StockManagement\Command\EcoVerse.StockManagement.Command.API\obj\Debug\net8.0\EcoVerse.StockManagement.Command.API.genruntimeconfig.cache
 C:\.NET Projects\EcoVerse\Services\StockManagement\Command\EcoVerse.StockManagement.Command.API\obj\Debug\net8.0\ref\EcoVerse.StockManagement.Command.API.dll
 C:\.NET Projects\EcoVerse\Services\StockManagement\Command\EcoVerse.StockManagement.Command.API\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\Command\EcoVerse.StockManagement.Command.API\bin\Debug\net8.0\FluentValidation.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\Command\EcoVerse.StockManagement.Command.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\Command\EcoVerse.StockManagement.Command.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

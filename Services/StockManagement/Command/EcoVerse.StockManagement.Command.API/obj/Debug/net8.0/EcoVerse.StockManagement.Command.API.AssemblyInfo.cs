@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoVerse.StockManagement.Command.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f41f538427f618ef180bcb8848766d742c7a3cc0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+837263efeba70cf9477052269e78c8852dc776a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoVerse.StockManagement.Command.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoVerse.StockManagement.Command.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
