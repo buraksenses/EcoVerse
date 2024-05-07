@@ -1,0 +1,12 @@
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\bin\Debug\net8.0\EcoVerse.StockManagement.Query.Domain.deps.json
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\bin\Debug\net8.0\EcoVerse.StockManagement.Query.Domain.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\bin\Debug\net8.0\EcoVerse.StockManagement.Query.Domain.pdb
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\obj\Debug\net8.0\EcoVerse.StockManagement.Query.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\obj\Debug\net8.0\EcoVerse.StockManagement.Query.Domain.AssemblyInfoInputs.cache
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\obj\Debug\net8.0\EcoVerse.StockManagement.Query.Domain.AssemblyInfo.cs
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\obj\Debug\net8.0\EcoVerse.StockManagement.Query.Domain.csproj.CoreCompileInputs.cache
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\obj\Debug\net8.0\EcoVerse.StockManagement.Query.Domain.sourcelink.json
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\obj\Debug\net8.0\EcoVerse.StockManagement.Query.Domain.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\obj\Debug\net8.0\refint\EcoVerse.StockManagement.Query.Domain.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\obj\Debug\net8.0\EcoVerse.StockManagement.Query.Domain.pdb
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Domain\obj\Debug\net8.0\ref\EcoVerse.StockManagement.Query.Domain.dll

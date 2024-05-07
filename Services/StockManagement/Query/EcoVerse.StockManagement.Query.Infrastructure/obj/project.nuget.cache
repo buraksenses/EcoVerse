@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3Fg8sfjYRvWW6YvqwA4EvJRph3p8S0q9NazjiFzr7yR0g60JGuX5y5hGojmvq38BCr6dsjsfH+DIppoPQzr6Tg==",
+  "dgSpecHash": "07Dxq0lpW2NMo2yz0Minwa+OdmA9fzSeiVk/sM76hGuUJbRr9QgWh5nkjAOLHPp8w8LN1fVlB6qq1ZMDrCVYhQ==",
   "success": true,
   "projectFilePath": "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\Query\\EcoVerse.StockManagement.Query.Infrastructure\\EcoVerse.StockManagement.Query.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,9 @@
     "C:\\Users\\ecebs\\.nuget\\packages\\confluent.kafka\\2.4.0-rc2\\confluent.kafka.2.4.0-rc2.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\librdkafka.redist\\2.4.0-rc2\\librdkafka.redist.2.4.0-rc2.nupkg.sha512",
+    "C:\\Users\\ecebs\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\ecebs\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\ecebs\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",

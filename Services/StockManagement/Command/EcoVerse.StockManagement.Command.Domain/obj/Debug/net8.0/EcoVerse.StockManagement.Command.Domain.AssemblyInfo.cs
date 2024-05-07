@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoVerse.StockManagement.Command.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+708ca465d236b25b53cd74783c28dac756b02eae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0b2c2d96f5577684e58ac9d5d3c1b5db4e1bdfb")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoVerse.StockManagement.Command.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoVerse.StockManagement.Command.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
