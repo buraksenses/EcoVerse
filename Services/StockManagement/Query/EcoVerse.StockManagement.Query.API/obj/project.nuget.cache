@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mKYAKr81idt9Eqxym5T8v34w3g8aL7oC18/xY2TOz+BXMAOzjvNTNzqz5xpLtxMkw++CCc1vBuaXITe1mbXkpQ==",
+  "dgSpecHash": "d35oPcYqiX+W29X6llbx57C7bHwRMEPfTvly4Sb33vWGhs1LWmjVNKEhkcDlOsA1pBmq7xBaX6m9PrSMnRfNhg==",
   "success": true,
   "projectFilePath": "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\Query\\EcoVerse.StockManagement.Query.API\\EcoVerse.StockManagement.Query.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ecebs\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ecebs\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

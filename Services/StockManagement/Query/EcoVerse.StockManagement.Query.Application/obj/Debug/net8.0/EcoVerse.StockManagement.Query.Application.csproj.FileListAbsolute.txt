@@ -20,3 +20,5 @@ C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagemen
 C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Application\obj\Debug\net8.0\refint\EcoVerse.StockManagement.Query.Application.dll
 C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Application\obj\Debug\net8.0\EcoVerse.StockManagement.Query.Application.pdb
 C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Application\obj\Debug\net8.0\ref\EcoVerse.StockManagement.Query.Application.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Application\bin\Debug\net8.0\EcoVerse.Shared.dll
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.Application\bin\Debug\net8.0\EcoVerse.Shared.pdb

@@ -198,3 +198,4 @@ C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagemen
 C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.API\bin\Debug\net8.0\EcoVerse.StockManagement.Query.Application.dll
 C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.API\bin\Debug\net8.0\EcoVerse.StockManagement.Query.Application.pdb
+C:\.NET Projects\EcoVerse\Services\StockManagement\Query\EcoVerse.StockManagement.Query.API\bin\Debug\net8.0\AutoMapper.dll

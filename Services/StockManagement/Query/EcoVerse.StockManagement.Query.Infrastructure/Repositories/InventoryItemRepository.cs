@@ -50,4 +50,18 @@ public class InventoryItemRepository : IInventoryItemRepository
 
         return await context.InventoryItems.AsNoTracking().ToListAsync();
     }
+
+    public async Task<List<InventoryItemEntity>> GetAllByQuantity(int quantity)
+    {
+        await using var context = _contextFactory.CreateDbContext();
+
+        return await context.InventoryItems.Where(i => i.Quantity == quantity).ToListAsync();
+    }
+
+    public async Task<List<InventoryItemEntity>> GetAllByPrice(decimal price)
+    {
+        await using var context = _contextFactory.CreateDbContext();
+
+        return await context.InventoryItems.Where(i => i.Price == price).ToListAsync();
+    }
 }

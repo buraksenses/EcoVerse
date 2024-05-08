@@ -7,7 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\..\EcoVerse.Shared\EcoVerse.Shared.csproj" />
       <ProjectReference Include="..\EcoVerse.StockManagement.Query.Infrastructure\EcoVerse.StockManagement.Query.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
     </ItemGroup>
 
 </Project>

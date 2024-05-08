@@ -13,4 +13,8 @@ public interface IInventoryItemRepository
     Task<InventoryItemEntity?> GetByIdAsync(Guid id);
 
     Task<List<InventoryItemEntity>> GetAllAsync();
+
+    Task<List<InventoryItemEntity>> GetAllByQuantity(int quantity);
+    
+    Task<List<InventoryItemEntity>> GetAllByPrice(decimal price);
 }
