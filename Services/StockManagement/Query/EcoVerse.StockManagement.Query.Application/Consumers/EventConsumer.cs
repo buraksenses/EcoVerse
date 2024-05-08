@@ -5,8 +5,9 @@ using CQRS.Core.Events;
 using EcoVerse.StockManagement.Query.Infrastructure.Converters;
 using MediatR;
 using Microsoft.Extensions.Options;
+using EventJsonConverter = EcoVerse.StockManagement.Query.Application.Converters.EventJsonConverter;
 
-namespace EcoVerse.StockManagement.Query.Infrastructure.Consumers;
+namespace EcoVerse.StockManagement.Query.Application.Consumers;
 
 public class EventConsumer : IEventConsumer
 {
@@ -71,7 +72,7 @@ public class EventConsumer : IEventConsumer
     private static Type ResolveEventType(string eventTypeName)
     {
         // Namespace ve assembly adını ekleyerek tam tip adını oluştur
-        var fullyQualifiedTypeName = $"EcoVerse.StockManagement.Query.Infrastructure.Notifications.{eventTypeName}, EcoVerse.StockManagement.Query.Infrastructure";
+        var fullyQualifiedTypeName = $"EcoVerse.StockManagement.Query.Application.Notifications.{eventTypeName}, EcoVerse.StockManagement.Query.Application";
 
         // Tipi çözümle
         var eventType = Type.GetType(fullyQualifiedTypeName);

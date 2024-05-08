@@ -4578,6 +4578,19 @@
           "bin/placeholder/EcoVerse.StockManagement.Common.dll": {}
         }
       },
+      "EcoVerse.StockManagement.Query.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "EcoVerse.StockManagement.Query.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EcoVerse.StockManagement.Query.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoVerse.StockManagement.Query.Application.dll": {}
+        }
+      },
       "EcoVerse.StockManagement.Query.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -12459,6 +12472,11 @@
       "path": "../../EcoVerse.StockManagement.Common/EcoVerse.StockManagement.Common.csproj",
       "msbuildProject": "../../EcoVerse.StockManagement.Common/EcoVerse.StockManagement.Common.csproj"
     },
+    "EcoVerse.StockManagement.Query.Application/1.0.0": {
+      "type": "project",
+      "path": "../EcoVerse.StockManagement.Query.Application/EcoVerse.StockManagement.Query.Application.csproj",
+      "msbuildProject": "../EcoVerse.StockManagement.Query.Application/EcoVerse.StockManagement.Query.Application.csproj"
+    },
     "EcoVerse.StockManagement.Query.Domain/1.0.0": {
       "type": "project",
       "path": "../EcoVerse.StockManagement.Query.Domain/EcoVerse.StockManagement.Query.Domain.csproj",
@@ -12473,7 +12491,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "EcoVerse.Shared >= 1.0.0",
-      "EcoVerse.StockManagement.Query.Infrastructure >= 1.0.0",
+      "EcoVerse.StockManagement.Query.Application >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Proxies >= 8.0.4",
@@ -12510,8 +12528,8 @@
             "C:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj": {
               "projectPath": "C:\\.NET Projects\\EcoVerse\\EcoVerse.Shared\\EcoVerse.Shared.csproj"
             },
-            "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\Query\\EcoVerse.StockManagement.Query.Infrastructure\\EcoVerse.StockManagement.Query.Infrastructure.csproj": {
-              "projectPath": "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\Query\\EcoVerse.StockManagement.Query.Infrastructure\\EcoVerse.StockManagement.Query.Infrastructure.csproj"
+            "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\Query\\EcoVerse.StockManagement.Query.Application\\EcoVerse.StockManagement.Query.Application.csproj": {
+              "projectPath": "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\Query\\EcoVerse.StockManagement.Query.Application\\EcoVerse.StockManagement.Query.Application.csproj"
             }
           }
         }

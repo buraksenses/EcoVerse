@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace EcoVerse.StockManagement.Query.Infrastructure.Notifications;
+namespace EcoVerse.StockManagement.Query.Application.Notifications;
 
 public class InventoryItemPriceUpdatedEvent : INotification
 {

@@ -1,9 +1,9 @@
-﻿using EcoVerse.StockManagement.Query.Domain.Entities;
+﻿using EcoVerse.StockManagement.Query.Application.Notifications;
+using EcoVerse.StockManagement.Query.Domain.Entities;
 using EcoVerse.StockManagement.Query.Domain.Repositories;
-using EcoVerse.StockManagement.Query.Infrastructure.Notifications;
 using MediatR;
 
-namespace EcoVerse.StockManagement.Query.Infrastructure.Handlers;
+namespace EcoVerse.StockManagement.Query.Application.Handlers;
 
 public class InventoryItemAddedEventHandler : INotificationHandler<InventoryItemAddedEvent>
 {

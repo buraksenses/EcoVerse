@@ -1,10 +1,10 @@
 using Confluent.Kafka;
 using CQRS.Core.Consumers;
 using EcoVerse.Shared.Exceptions;
+using EcoVerse.StockManagement.Query.Application.Consumers;
+using EcoVerse.StockManagement.Query.Application.Handlers;
 using EcoVerse.StockManagement.Query.Domain.Repositories;
-using EcoVerse.StockManagement.Query.Infrastructure.Consumers;
 using EcoVerse.StockManagement.Query.Infrastructure.Data;
-using EcoVerse.StockManagement.Query.Infrastructure.Handlers;
 using EcoVerse.StockManagement.Query.Infrastructure.Repositories;
 using MediatR;
 using Microsoft.EntityFrameworkCore;

@@ -18,7 +18,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\..\EcoVerse.Shared\EcoVerse.Shared.csproj" />
-      <ProjectReference Include="..\EcoVerse.StockManagement.Query.Infrastructure\EcoVerse.StockManagement.Query.Infrastructure.csproj" />
+      <ProjectReference Include="..\EcoVerse.StockManagement.Query.Application\EcoVerse.StockManagement.Query.Application.csproj" />
     </ItemGroup>
 
 </Project>

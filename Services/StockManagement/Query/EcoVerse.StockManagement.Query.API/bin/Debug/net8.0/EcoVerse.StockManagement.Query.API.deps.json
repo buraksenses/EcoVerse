@@ -9,7 +9,7 @@
       "EcoVerse.StockManagement.Query.API/1.0.0": {
         "dependencies": {
           "EcoVerse.Shared": "1.0.0",
-          "EcoVerse.StockManagement.Query.Infrastructure": "1.0.0",
+          "EcoVerse.StockManagement.Query.Application": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.4",
           "Microsoft.EntityFrameworkCore.Design": "8.0.4",
           "Microsoft.EntityFrameworkCore.Proxies": "8.0.4",
@@ -2409,6 +2409,14 @@
           "EcoVerse.StockManagement.Common.dll": {}
         }
       },
+      "EcoVerse.StockManagement.Query.Application/1.0.0": {
+        "dependencies": {
+          "EcoVerse.StockManagement.Query.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "EcoVerse.StockManagement.Query.Application.dll": {}
+        }
+      },
       "EcoVerse.StockManagement.Query.Domain/1.0.0": {
         "runtime": {
           "EcoVerse.StockManagement.Query.Domain.dll": {}
@@ -4127,6 +4135,11 @@
       "sha512": ""
     },
     "EcoVerse.StockManagement.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EcoVerse.StockManagement.Query.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

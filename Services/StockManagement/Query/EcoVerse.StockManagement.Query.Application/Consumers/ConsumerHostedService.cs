@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace EcoVerse.StockManagement.Query.Infrastructure.Consumers;
+namespace EcoVerse.StockManagement.Query.Application.Consumers;
 
 public class ConsumerHostedService : IHostedService
 {

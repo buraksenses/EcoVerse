@@ -1,8 +1,8 @@
-﻿using EcoVerse.StockManagement.Query.Domain.Repositories;
-using EcoVerse.StockManagement.Query.Infrastructure.Notifications;
+﻿using EcoVerse.StockManagement.Query.Application.Notifications;
+using EcoVerse.StockManagement.Query.Domain.Repositories;
 using MediatR;
 
-namespace EcoVerse.StockManagement.Query.Infrastructure.Handlers;
+namespace EcoVerse.StockManagement.Query.Application.Handlers;
 
 public class InventoryItemRemovedEventHandler : INotificationHandler<InventoryItemRemovedEvent>
 {

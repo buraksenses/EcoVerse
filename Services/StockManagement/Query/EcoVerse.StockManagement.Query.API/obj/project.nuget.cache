@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xdYcvuxKENkxpSpbRz082+eS/5cibwwy1fI+jwQxCpjaFn+B/YH/5Jn9nPGw/qrXQvoWKZcso0/kPfaXi1YXpA==",
+  "dgSpecHash": "mKYAKr81idt9Eqxym5T8v34w3g8aL7oC18/xY2TOz+BXMAOzjvNTNzqz5xpLtxMkw++CCc1vBuaXITe1mbXkpQ==",
   "success": true,
   "projectFilePath": "C:\\.NET Projects\\EcoVerse\\Services\\StockManagement\\Query\\EcoVerse.StockManagement.Query.API\\EcoVerse.StockManagement.Query.API.csproj",
   "expectedPackageFiles": [
