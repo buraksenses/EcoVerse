@@ -1,6 +1,8 @@
 ﻿using EcoVerse.ProductManagement.Application.DTOs.Product;
 using EcoVerse.ProductManagement.Application.Interfaces;
 using EcoVerse.Shared.ControllerBases;
+using EcoVerse.Shared.Messages;
+using MassTransit;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,9 +22,9 @@ public class ProductsController : CustomBaseController
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateAsync(CreateProductDto productDto) 
+    public async Task<IActionResult> CreateAsync(CreateProductDto productDto)
         => CreateActionResultInstance(await _productService.CreateAsync(productDto));
-
+    
     [HttpGet]
     public async Task<IActionResult> ListAllAsync(string? filterOn = null, string? filterQuery = null,string?
             sortBy = null,bool? isAscending = null,

@@ -6,7 +6,7 @@ namespace EcoVerse.ProductManagement.Application.Interfaces;
 
 public interface IProductService
 {
-    Task<Response<NoContent>> CreateAsync(CreateProductDto productDto);
+    Task<Response<CreateProductDto>> CreateAsync(CreateProductDto productDto);
 
     Task<Response<List<GetProductDto>>> ListAllAsync(string? filterOn = null, string? filterQuery = null,string?
             sortBy = null,bool? isAscending = null,

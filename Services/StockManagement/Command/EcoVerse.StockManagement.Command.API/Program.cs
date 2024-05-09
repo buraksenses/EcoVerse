@@ -5,6 +5,7 @@ using CQRS.Core.Handlers;
 using CQRS.Core.Infrastructure;
 using CQRS.Core.Producers;
 using EcoVerse.Shared.Exceptions;
+using EcoVerse.StockManagement.Command.Application.Consumers;
 using EcoVerse.StockManagement.Command.Application.Handlers;
 using EcoVerse.StockManagement.Command.Application.Validations;
 using EcoVerse.StockManagement.Command.Domain.Aggregates;
@@ -16,6 +17,7 @@ using EcoVerse.StockManagement.Command.Infrastructure.Stores;
 using EcoVerse.StockManagement.Common.Events;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using MassTransit;
 using MediatR;
 using MongoDB.Bson.Serialization;
 
@@ -32,6 +34,28 @@ BsonClassMap.RegisterClassMap<InventoryItemPriceUpdatedEvent>();
 
 builder.Services.Configure<MongoDbConfig>(builder.Configuration.GetSection(nameof(MongoDbConfig)));
 builder.Services.Configure<ProducerConfig>(builder.Configuration.GetSection(nameof(ProducerConfig)));
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<AddNewProductEventConsumer>();
+
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMQUrl"], "/", host =>
+        {
+            host.Username("guest");
+            host.Password("guest");
+        });
+
+        cfg.ReceiveEndpoint("new-product-added-queue", e =>
+        {
+            e.ConfigureConsumer<AddNewProductEventConsumer>(context);
+        });
+                
+        cfg.ConfigureEndpoints(context);
+               
+    });
+});
 
 builder.Services.AddScoped<IEventStoreRepository, EventStoreRepository>();
 builder.Services.AddScoped<IEventProducer, EventProducer>();
