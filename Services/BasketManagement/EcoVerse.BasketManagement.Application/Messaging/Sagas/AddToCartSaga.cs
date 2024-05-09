@@ -9,63 +9,69 @@ public class AddToCartSaga : MassTransitStateMachine<AddToCartSagaState>
     public State AwaitingProductVerification { get; private set; }
     public State AwaitingInventoryCheck { get; private set; }
 
-    public Event<ProductCheckResponseEvent> ProductVerified { get; private set; }
-    //public Event<InventoryChecked> InventoryChecked { get; private set; }
-    public Event<AddItemToCartCommand> AddToCart { get; private set; }
+    public Event<ProductCheckResponseEvent> ProductCheckResponseEvent { get; private set; }
+    public Event<StockCheckResponseEvent> StockCheckResponseEvent { get; private set; }
+    public Event<AddItemToCartEvent> AddItemToCartEvent { get; private set; }
 
-    public AddToCartSaga()
-    {
-        Event(() => AddToCart, x => x.CorrelateById(context => context.Message.CorrelationId));
-        Event(() => ProductVerified, x => x.CorrelateById(context => context.Message.CorrelationId));
-        
-        InstanceState(x => x.CurrentState);
-
-        Initially(
-            When(AddToCart)
-                .Then(context =>
-                {
-                    context.Saga.ProductId = context.Message.ProductId;
-                    context.Saga.Quantity = context.Message.Quantity;
-                    context.Saga.UserId = context.Message.UserId;
-                })
-                .Publish(context => new VerifyProductCommand
-                {
-                    ProductId = context.Saga.ProductId,
-                    Price = context.Saga.Price,
-                    Quantity = context.Saga.Quantity,
-                    UserId = context.Saga.UserId
-                })
-                .TransitionTo(AwaitingProductVerification)
-        );
-
-        During(AwaitingProductVerification,
-            When(ProductVerified)
-                .Then(context =>
-                {
-                    if (!context.Message.Exists)
-                        throw new InvalidOperationException("Product does not exist.");
-                })
-                .Publish(context => new ProductVerified
-                {
-                    ProductId = context.Saga.ProductId,
-                    Price = context.Saga.Price,
-                    Quantity = context.Saga.Quantity,
-                    UserId = context.Saga.UserId,
-                    Exists = true
-                })
-                .Finalize()
-        );
-
-        SetCompletedWhenFinalized();
-        // During(AwaitingInventoryCheck,
-        //     When(InventoryChecked)
-        //         .Then(context =>
-        //         {
-        //             if (!context.Message.IsInStock)
-        //                 throw new InvalidOperationException("Insufficient stock.");
-        //         })
-        //         .Finalize()
-        // );
-
-    }
+    // public AddToCartSaga()
+    // {
+    //     Event(() => AddItemToCartEvent, x => x.CorrelateById(context => context.Message.CorrelationId));
+    //     Event(() => ProductCheckResponseEvent, x => x.CorrelateById(context => context.Message.CorrelationId));
+    //     Event(() => StockCheckResponseEvent, x => x.CorrelateById(context => context.Message.CorrelationId));
+    //
+    //     InstanceState(x => x.CurrentState);
+    //
+    //     Initially(
+    //         When(AddItemToCartEvent)
+    //             .Then(context =>
+    //             {
+    //                 context.Saga.ProductId = context.Message.ProductId;
+    //                 context.Saga.Quantity = context.Message.Quantity;
+    //                 context.Saga.UserId = context.Message.UserId;
+    //             })
+    //             .Publish(context => new VerifyStockCommand
+    //             {
+    //                 ProductId = context.Saga.ProductId,
+    //                 Quantity = context.Saga.Quantity
+    //             })
+    //             .TransitionTo(AwaitingInventoryCheck)
+    //     );
+    //     
+    //     During(AwaitingInventoryCheck,
+    //         When(StockCheckResponseEvent)
+    //             .Then(context =>
+    //             {
+    //                 if (!context.Message.IsInStock)
+    //                     throw new InvalidOperationException("Insufficient stock.");
+    //             })
+    //             .Publish(context => new VerifyProductCommand
+    //             {
+    //                 ProductId = context.Saga.ProductId,
+    //                 Quantity = context.Saga.Quantity,
+    //                 Price = context.Saga.Price,
+    //                 UserId = context.Saga.UserId
+    //             })
+    //             .TransitionTo(AwaitingProductVerification)
+    //         
+    //     );
+    //     During(AwaitingProductVerification,
+    //         When(ProductCheckResponseEvent)
+    //             .Then(context =>
+    //             {
+    //                 if (!context.Message.Exists)
+    //                     throw new InvalidOperationException("Product does not exist.");
+    //             })
+    //             .Publish(context => new ProductVerified
+    //             {
+    //                 ProductId = context.Saga.ProductId,
+    //                 Price = context.Saga.Price,
+    //                 Quantity = context.Saga.Quantity,
+    //                 UserId = context.Saga.UserId,
+    //                 Exists = true
+    //             })
+    //             .Finalize()
+    //     );
+    //     
+    //     SetCompletedWhenFinalized();
+    // }
 }

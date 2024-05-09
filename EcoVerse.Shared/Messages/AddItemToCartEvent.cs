@@ -1,7 +1,9 @@
 ﻿namespace EcoVerse.Shared.Messages;
 
-public class ProductVerified
+public class AddItemToCartEvent
 {
+    public Guid CorrelationId { get; set; }
+    
     public string UserId { get; set; }
     
     public Guid ProductId { get; set; }
@@ -9,6 +11,4 @@ public class ProductVerified
     public int Quantity { get; set; }
 
     public decimal Price { get; set; }
-
-    public bool Exists { get; set; }
 }

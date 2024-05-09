@@ -28,8 +28,8 @@ public static class ApplicationServiceExtensions
         {
             x.AddConsumer<ProductVerifiedConsumer>();
             
-            x.AddSagaStateMachine<AddToCartSaga, AddToCartSagaState>()
-                .InMemoryRepository();
+            // x.AddSagaStateMachine<AddToCartSaga, AddToCartSagaState>()
+            //     .InMemoryRepository();
 
             x.UsingRabbitMq((context, cfg) =>
             {
@@ -39,7 +39,7 @@ public static class ApplicationServiceExtensions
                     host.Password("guest");
                 });
 
-                cfg.ReceiveEndpoint("add-to-cart-service", e =>
+                cfg.ReceiveEndpoint("product-verified-queue", e =>
                 {
                     e.ConfigureConsumer<ProductVerifiedConsumer>(context);
                 });

@@ -11,6 +11,8 @@ public interface IInventoryItemRepository
     Task RemoveAsync(InventoryItemEntity entity);
 
     Task<InventoryItemEntity?> GetByIdAsync(Guid id);
+    
+    Task<InventoryItemEntity?> GetByProductIdAsync(Guid productId);
 
     Task<List<InventoryItemEntity>> GetAllAsync();
 

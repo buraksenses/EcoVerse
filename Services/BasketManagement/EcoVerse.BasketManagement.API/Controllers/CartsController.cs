@@ -31,7 +31,7 @@ public class CartsController : CustomBaseController
     [HttpPost("items")]
     public async Task<IActionResult> AddItemAsync(AddToCartDto addToCartDto)
     {
-        await _publishEndpoint.Publish<AddItemToCartCommand>(new AddItemToCartCommand
+        await _publishEndpoint.Publish<AddItemToCartEvent>(new AddItemToCartEvent
         {
             Price = addToCartDto.Price,
             ProductId = addToCartDto.ProductId,
@@ -39,7 +39,7 @@ public class CartsController : CustomBaseController
             UserId = _sharedIdentityService.GetUserId
         });
         
-        return CreateActionResultInstance(Shared.DTOs.Response<NoContent>.Success(204));
+        return CreateActionResultInstance(Shared.DTOs.Response<NoContent>.Success(200));
     }
 
     [HttpPut("items/{itemId}")]

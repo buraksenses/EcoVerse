@@ -96,3 +96,4 @@ public class ProductRepository : IProductRepository
     }
 
 }
+//category olustur. product olustur. sonra sagayi test et.

@@ -44,6 +44,13 @@ public class InventoryItemRepository : IInventoryItemRepository
         return await context.InventoryItems.FirstOrDefaultAsync(i => i.Id == id);
     }
 
+    public async Task<InventoryItemEntity?> GetByProductIdAsync(Guid productId)
+    {
+        await using var context = _contextFactory.CreateDbContext();
+
+        return await context.InventoryItems.FirstOrDefaultAsync(i => i.ProductId == productId);
+    }
+
     public async Task<List<InventoryItemEntity>> GetAllAsync()
     {
         await using var context = _contextFactory.CreateDbContext();

@@ -6,6 +6,7 @@ using EcoVerse.StockManagement.Query.Application.Handlers;
 using EcoVerse.StockManagement.Query.Domain.Repositories;
 using EcoVerse.StockManagement.Query.Infrastructure.Data;
 using EcoVerse.StockManagement.Query.Infrastructure.Repositories;
+using MassTransit;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,27 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 //builder.Services.AddApplicationServices(builder.Configuration);
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<StockVerificationConsumer>();
+
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("rabbitmq://localhost", h =>
+        {
+            h.Username("guest");
+            h.Password("guest");
+        });
+
+        cfg.ReceiveEndpoint("stock-verification-queue", e =>
+        {
+            e.ConfigureConsumer<StockVerificationConsumer>(context);
+        });
+    });
+});
+
+builder.Services.AddScoped<StockVerificationConsumer>();
 
 Action<DbContextOptionsBuilder> configureDbContext = 
     o => o.UseLazyLoadingProxies().UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));

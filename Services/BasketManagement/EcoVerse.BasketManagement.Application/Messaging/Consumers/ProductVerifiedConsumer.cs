@@ -5,7 +5,7 @@ using MassTransit;
 
 namespace EcoVerse.BasketManagement.Application.Messaging.Consumers;
 
-public class ProductVerifiedConsumer : IConsumer<ProductVerified>
+public class ProductVerifiedConsumer : IConsumer<StockCheckResponseEvent>
 {
     private readonly ICartService _cartService;
 
@@ -13,7 +13,7 @@ public class ProductVerifiedConsumer : IConsumer<ProductVerified>
     {
         _cartService = cartService;
     }
-    public async Task Consume(ConsumeContext<ProductVerified> context)
+    public async Task Consume(ConsumeContext<StockCheckResponseEvent> context)
     {
         await _cartService.AddItemAsync(context.Message.UserId,
             new AddToCartDto(context.Message.ProductId, context.Message.Quantity, context.Message.Price));

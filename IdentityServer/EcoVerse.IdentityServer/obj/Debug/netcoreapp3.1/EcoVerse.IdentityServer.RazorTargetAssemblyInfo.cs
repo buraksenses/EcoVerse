@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoVerse.IdentityServer")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3eab3d40386a46fa55511e29e2bbaafad0d6af77")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e64e9d5245a8c6dcae1aea5db59cb4bee93c0beb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoVerse.IdentityServer.Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 

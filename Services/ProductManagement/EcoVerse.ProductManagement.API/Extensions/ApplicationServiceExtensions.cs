@@ -1,5 +1,4 @@
-﻿using EcoVerse.ProductManagement.Application.Consumers;
-using EcoVerse.ProductManagement.Application.Interfaces;
+﻿using EcoVerse.ProductManagement.Application.Interfaces;
 using EcoVerse.ProductManagement.Application.Services;
 using EcoVerse.ProductManagement.Application.Validations.Product;
 using EcoVerse.ProductManagement.Domain.Interfaces;
@@ -18,19 +17,12 @@ public static class ApplicationServiceExtensions
     {
         services.AddMassTransit(x =>
         {
-            x.AddConsumer<AddItemToCartConsumer>();
-            
             x.UsingRabbitMq((context, cfg) =>
             {
-                cfg.Host(config["RabbitMQUrl"], "/", host =>
+                cfg.Host("rabbitmq://localhost", h =>
                 {
-                    host.Username("guest");
-                    host.Password("guest");
-                });
-                
-                cfg.ReceiveEndpoint("add-to-cart-response-service", e =>
-                {
-                    e.ConfigureConsumer<AddItemToCartConsumer>(context);
+                    h.Username("guest");
+                    h.Password("guest");
                 });
             });
         });

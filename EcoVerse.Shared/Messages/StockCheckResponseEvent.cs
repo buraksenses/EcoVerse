@@ -1,6 +1,6 @@
 ﻿namespace EcoVerse.Shared.Messages;
 
-public class VerifyProductCommand
+public class StockCheckResponseEvent
 {
     public string UserId { get; set; }
     
@@ -9,4 +9,6 @@ public class VerifyProductCommand
     public int Quantity { get; set; }
 
     public decimal Price { get; set; }
+
+    public bool IsInStock { get; set; }
 }

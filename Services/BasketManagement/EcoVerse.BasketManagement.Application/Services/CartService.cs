@@ -60,7 +60,7 @@ public class CartService : ICartService
         
         await _cartRepository.UpdateQuantityAsync(userId, cart, item, updateCartDto.Quantity);
         
-        return Response<NoContent>.Success(204);
+        return Response<NoContent>.Success(200);
     }
 
     public async Task<Response<NoContent>> DeleteItemAsync(string userId, DeleteFromCartDto deleteFromCartDto)
@@ -78,7 +78,7 @@ public class CartService : ICartService
         
         await _cartRepository.DeleteItemAsync(userId, cart, item);
         
-        return Response<NoContent>.Success(204);
+        return Response<NoContent>.Success(200);
     }
 
     public Task CheckoutAsync()
