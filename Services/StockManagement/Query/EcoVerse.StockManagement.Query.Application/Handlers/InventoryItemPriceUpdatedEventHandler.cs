@@ -1,4 +1,5 @@
-﻿using EcoVerse.StockManagement.Query.Application.Notifications;
+﻿using EcoVerse.Shared.Exceptions;
+using EcoVerse.StockManagement.Query.Application.Notifications;
 using EcoVerse.StockManagement.Query.Domain.Repositories;
 using MediatR;
 
@@ -18,7 +19,7 @@ public class InventoryItemPriceUpdatedEventHandler : INotificationHandler<Invent
         var item = await _repository.GetByIdAsync(notification.Id);
 
         if (item == null)
-            throw new Exception("Inventory item not found!");
+            throw new InventoryItemNotFoundException("Inventory item not found!");
 
         item.Price = notification.Price;
         await _repository.UpdateAsync(item);

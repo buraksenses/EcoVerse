@@ -16,6 +16,7 @@ public class ProductVerifiedConsumer : IConsumer<StockCheckResponseEvent>
     public async Task Consume(ConsumeContext<StockCheckResponseEvent> context)
     {
         await _cartService.AddItemAsync(context.Message.UserId,
-            new AddToCartDto(context.Message.ProductId, context.Message.Quantity, context.Message.Price));
+            new AddToCartDto(context.Message.ProductId, context.Message.CartQuantity, context.Message.Price,
+                context.Message.Name, context.Message.Description));
     }
 }

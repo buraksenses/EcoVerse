@@ -19,15 +19,18 @@ public class StockVerificationConsumer : IConsumer<AddItemToCartEvent>
     {
         var message = context.Message;
 
-        var product = await repository.GetByProductIdAsync(context.Message.ProductId);
-        if (product != null && product.Quantity > context.Message.Quantity && product.ProductId == message.ProductId)
+        var product = await repository.GetByProductIdAsync(message.ProductId);
+        if (product != null && product.Quantity > message.Quantity && product.ProductId == message.ProductId)
         {
             await _publishEndpoint.Publish<StockCheckResponseEvent>(new StockCheckResponseEvent
             {
                 ProductId = message.ProductId,
                 IsInStock = true,
+                Name = message.Name,
+                Description = message.Description,
                 Price = message.Price,
-                Quantity = message.Quantity,
+                StockQuantity = product.Quantity - message.Quantity,
+                CartQuantity = message.Quantity,
                 UserId = message.UserId
             });
         }

@@ -4,8 +4,6 @@ namespace EcoVerse.StockManagement.Common.Events;
 
 public class InventoryItemAddedEvent : BaseEvent
 {
-    public Guid ProductId { get; set; }
-
     public string Name { get; set; }
 
     public decimal Price { get; set; }

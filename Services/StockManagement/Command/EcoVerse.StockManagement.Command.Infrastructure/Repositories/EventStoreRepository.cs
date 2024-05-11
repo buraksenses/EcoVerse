@@ -29,6 +29,12 @@ public class EventStoreRepository : IEventStoreRepository
         return eventModel;
     }
 
+    public async Task<List<EventModel>> FindByInventoryItemId(Guid inventoryItemId)
+    {
+        var eventModel = await _eventStoreCollection.Find(x => x.EventData.ProductId == inventoryItemId).ToListAsync();
+        return eventModel;
+    }
+
     public async Task<List<EventModel>> FindAllAsync()
     {
         return await _eventStoreCollection.Find(FilterDefinition<EventModel>.Empty).ToListAsync().ConfigureAwait(false);

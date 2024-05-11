@@ -2,6 +2,7 @@
 using Confluent.Kafka;
 using CQRS.Core.Events;
 using CQRS.Core.Producers;
+using EcoVerse.Shared.Exceptions;
 using Microsoft.Extensions.Options;
 
 namespace EcoVerse.StockManagement.Command.Infrastructure.Producers;
@@ -31,7 +32,7 @@ public class EventProducer : IEventProducer
         var deliveryResult = await producer.ProduceAsync(topic, eventMessage);
 
         if (deliveryResult.Status == PersistenceStatus.NotPersisted)
-            throw new Exception(
+            throw new KafkaEventProduceFailedException(
                 $"Could not produced {@event.GetType().Name} message to topic - {topic} due to the following reason: {deliveryResult.Message}");
     }
 }

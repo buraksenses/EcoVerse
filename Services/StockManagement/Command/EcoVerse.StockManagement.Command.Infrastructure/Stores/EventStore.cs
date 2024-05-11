@@ -55,7 +55,17 @@ public class EventStore : IEventStore
         var eventStream = await _repository.FindByAggregateId(aggregateId);
 
         if (eventStream == null || !eventStream.Any())
-                throw new AggregateNotFoundException("Incorrect post ID provided!");
+                throw new AggregateNotFoundException("Incorrect ID provided!");
+
+        return eventStream.OrderBy(x => x.Version).Select(x => x.EventData).ToList();
+    }
+    
+    public async Task<List<BaseEvent>> GetEventsByItemIdAsync(Guid inventoryItemId)
+    {
+        var eventStream = await _repository.FindByInventoryItemId(inventoryItemId);
+
+        if (eventStream == null || !eventStream.Any())
+            throw new AggregateNotFoundException("Incorrect item ID provided!");
 
         return eventStream.OrderBy(x => x.Version).Select(x => x.EventData).ToList();
     }

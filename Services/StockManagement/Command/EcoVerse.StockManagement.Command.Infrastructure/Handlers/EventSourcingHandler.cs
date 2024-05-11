@@ -34,4 +34,19 @@ public class EventSourcingHandler : IEventSourcingHandler<InventoryItemAggregate
 
         return aggregate;
     }
+    
+    public async Task<InventoryItemAggregate> GetByInventoryItemIdAsync(Guid inventoryItemId)
+    {
+        var aggregate = new InventoryItemAggregate();
+
+        var events = await _eventStore.GetEventsByItemIdAsync(inventoryItemId);
+
+        if (events == null || !events.Any())
+            return aggregate;
+        
+        aggregate.ReplayEvents(events);
+        aggregate.Version = events.Select(x => x.Version).Max();
+
+        return aggregate;
+    }
 }

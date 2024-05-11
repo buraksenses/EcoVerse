@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoVerse.BasketManagement.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e64e9d5245a8c6dcae1aea5db59cb4bee93c0beb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8e45e950b571670f26c112e1a485f81cfbf5eba")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoVerse.BasketManagement.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoVerse.BasketManagement.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

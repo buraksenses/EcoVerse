@@ -38,6 +38,7 @@ builder.Services.Configure<ProducerConfig>(builder.Configuration.GetSection(name
 builder.Services.AddMassTransit(x =>
 {
     x.AddConsumer<AddNewProductEventConsumer>();
+    x.AddConsumer<StockCheckResponseEventConsumer>();
 
     x.UsingRabbitMq((context, cfg) =>
     {
@@ -50,6 +51,11 @@ builder.Services.AddMassTransit(x =>
         cfg.ReceiveEndpoint("new-product-added-queue", e =>
         {
             e.ConfigureConsumer<AddNewProductEventConsumer>(context);
+        });
+        
+        cfg.ReceiveEndpoint("add-to-cart-queue", e =>
+        {
+            e.ConfigureConsumer<StockCheckResponseEventConsumer>(context);
         });
                 
         cfg.ConfigureEndpoints(context);

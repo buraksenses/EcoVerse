@@ -35,6 +35,8 @@ public class CartsController : CustomBaseController
         {
             Price = addToCartDto.Price,
             ProductId = addToCartDto.ProductId,
+            Name = addToCartDto.Name,
+            Description = addToCartDto.Description,
             Quantity = addToCartDto.Quantity,
             UserId = _sharedIdentityService.GetUserId
         });

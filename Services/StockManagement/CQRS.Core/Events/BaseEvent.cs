@@ -11,4 +11,6 @@ public class BaseEvent : Message
 
     public string Type { get; set; }
     public int Version { get; set; }
+
+    public Guid ProductId { get; set; }
 }
